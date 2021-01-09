@@ -605,7 +605,8 @@ img{
 	line-height:80px;
 	font-size:28px;
 	text-align:center;
-	background-color:#ff5773;
+	/* background-color:#ff5773; */
+	background-color:#0037ed!important;
 }
 
 .main-header .header-left{
@@ -1277,7 +1278,7 @@ img{
 }
 
 .main-menu .navigation > li.dropdown > a{
-	
+	color: #0037ed;
 }
 
 .main-menu .navigation > li:last-child{
@@ -1949,14 +1950,16 @@ img{
 /* Handle */
 
 .hidden-bar .hidden-bar-wrapper::-webkit-scrollbar-thumb{
-  background: #ff5773;
+  /* background: #ff5773; */
+  background: #0037ed;
   cursor:pointer;
 }
 
 /* Handle on hover */
 
 .hidden-bar .hidden-bar-wrapper::-webkit-scrollbar-thumb:hover{
-  background: #ff5773; 
+	/* background: #ff5773;  */
+  background: #0037ed; 
 }
 
 .hidden-bar .mCSB_inside > .mCSB_container{

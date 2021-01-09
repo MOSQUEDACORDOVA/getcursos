@@ -61,7 +61,7 @@ a,
 .hidden-bar .pages-list li:hover a .icon, .hidden-bar .pages-list li.active a .icon,
 .main-header .header-right .options-box .notification-block .inner h3 a:hover,
 .main-header .header-right .options-box .notification-box .notification-box-btn:hover{
-	color:#ff5773;
+	color: #0037ed;
 }
 
 /* Background Color */
@@ -106,7 +106,8 @@ a,
 .signup-tabs .tab-btns .tab-btn:before,
 .quiz-form .check-box input[type="checkbox"]:checked + label:after,
 .main-header .header-right .options-box .notification-box .notification-alert{
-	background-color:#ff5773;
+	
+	background-color:#0037ed;
 }
 
 /* Light Background Color */
@@ -119,7 +120,8 @@ a,
 .feature-block-two .inner-box .content .dropdown-content span:hover,
 .hidden-bar .pages-list li.active a, .hidden-bar .pages-list li a:hover,
 .main-header .header-right .options-box .profile-box .profile-content .dark-mode .icon{
-	background-color:#fff0f3;
+	/* background-color:#fff0f3; */
+	background-color:rgba(49, 212, 223, .1)
 }
 
 .news-block .inner-box .content .image:before{
@@ -197,7 +199,7 @@ a,
 .quiz-form .form-group textarea:focus,
 .quiz-form .check-box input[type="checkbox"]:checked + label:before,
 .testview-section .inner-container .upper-box .certificate{
-	border-color:#ff5773;
+	border-color:#0037ed;
 }
 
 /*RGBA Color Dark*/
