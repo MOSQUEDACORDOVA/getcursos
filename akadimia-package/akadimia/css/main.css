@@ -82,6 +82,11 @@
 
  ***/
 
+ /* Customize style */
+ .logo {
+	 width: 180px;
+ }
+
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-size:14px;
