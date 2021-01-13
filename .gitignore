@@ -1,3 +1,5 @@
 __MACOSX/
 *.pdf
 *.sqlite3
+*__pycache__/
+*migrations/
