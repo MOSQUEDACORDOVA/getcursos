@@ -1,0 +1,1 @@
+- en el index.html, en la sección de "Lo que dicen nuestros estudiantes", cuando hay solo una opinion se muestran dos de ellas (duplicadas), probablemente un bug con algún script js

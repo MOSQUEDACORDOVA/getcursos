@@ -102,3 +102,8 @@ dist
 
 # TernJS port file
 .tern-port
+__MACOSX/
+*.pdf
+*.sqlite3
+*__pycache__/
+*migrations/

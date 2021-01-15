@@ -1,0 +1,545 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="page-wrapper">
+ 	
+    <!-- Preloader -->
+    <div class="preloader"></div>
+	
+	<!-- Sidebar Page Container -->
+    <div class="sidebar-page-container">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+				
+				<!-- Sidebar Side -->
+                <div class="sidebar-side left-sidebar col-lg-3 col-md-12 col-sm-12">
+                	<aside class="sidebar sticky-top">
+						
+						<!-- Tags Widget -->
+                        <div class="sidebar-widget tags-widget">
+							<div class="widget-content">
+								<div class="sidebar-title">
+									<h6>Temas Populares</h6>
+								</div>
+								<div class="content">
+									<ul>
+									{% for category in popular_tags %}
+									
+										<li><a href="#">{{category}}</a></li>
+									{% endfor %}
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Categories Widget -->
+                        <div class="sidebar-widget categories-widget">
+							<div class="widget-content">
+								<div class="sidebar-title">
+									<h6>Top Categorías</h6>
+								</div>
+								<div class="content">
+									<ul>
+										<li><a href="#"><span class="icon flaticon-web-programming"></span>Desarrollo</a></li>
+										<li><a href="#"><span class="icon flaticon-pie-chart"></span>Negocios</a></li>
+										<li><a href="#"><span class="icon flaticon-megaphone"></span>Marketing</a></li>
+										<li><a href="#"><span class="icon flaticon-computer"></span>IT y Software</a></li>
+										<li><a href="#"><span class="icon flaticon-picture"></span>Fotografia</a></li>
+										<li><a href="#"><span class="icon flaticon-ux"></span>UX Design</a></li>
+										<!-- <li><a href="category.html"><span class="icon flaticon-web-programming"></span>Desarrollo</a></li>
+										<li><a href="category.html"><span class="icon flaticon-pie-chart"></span>Negocios</a></li>
+										<li><a href="category.html"><span class="icon flaticon-megaphone"></span>Marketing</a></li>
+										<li><a href="category.html"><span class="icon flaticon-computer"></span>IT y Software</a></li>
+										<li><a href="category.html"><span class="icon flaticon-picture"></span>Fotografia</a></li>
+										<li><a href="category.html"><span class="icon flaticon-ux"></span>UX Design</a></li> -->
+									</ul>
+									<a href="#" class="all-category">Ver todas las categorias</a>
+									<!-- <a href="category.html" class="all-category">Ver todas las categorias</a> -->
+								</div>
+							</div>
+						</div>
+						
+						<!-- Featured Widget -->
+                        <div class="sidebar-widget featured-widget">
+							<div class="widget-content">
+								<div class="sidebar-title">
+									<h6>Instructores Destacados</h6>
+								</div>
+								<div class="content">
+									<div class="featured-carousel owl-carousel owl-theme">
+										
+										<!-- Feature Block -->
+										<div class="featured-block">
+											<div class="inner-box">
+												<div class="image">
+													<a href="instructor-profile.html" class="overlay-link"></a>
+													<img src="images/assets/programadora-background.jpg" alt="" />
+													<!-- Overlay Box -->
+													<div class="overlay-box">
+														<div class="overlay-inner">
+															<div class="overlay-content">
+																<!-- Author Image -->
+																<div class="author-image">
+																	<img src="images/assets/programadora.jpeg" alt="" />
+																</div>
+																<div class="name">Gina Castillo</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										<!-- Feature Block -->
+										<div class="featured-block">
+											<div class="inner-box">
+												<div class="image">
+													<a href="instructor-profile.html" class="overlay-link"></a>
+													<img src="images/assets/programador-background.jpg" alt="" />
+													<!-- Overlay Box -->
+													<div class="overlay-box">
+														<div class="overlay-inner">
+															<div class="overlay-content">
+																<!-- Author Image -->
+																<div class="author-image">
+																	<img src="images/assets/programador.jpg" alt="" />
+																</div>
+																<div class="name">Alex Gutierrez</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										<!-- Feature Block -->
+										<div class="featured-block">
+											<div class="inner-box">
+												<div class="image">
+													<a href="instructor-profile.html" class="overlay-link"></a>
+													<img src="images/assets/programador-background.jpg" alt="" />
+													<!-- Overlay Box -->
+													<div class="overlay-box">
+														<div class="overlay-inner">
+															<div class="overlay-content">
+																<!-- Author Image -->
+																<div class="author-image">
+																	<img src="images/assets/programador.jpg" alt="" />
+																</div>
+																<div class="name">José Gonzales</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										<!-- Feature Block -->
+										<div class="featured-block">
+											<div class="inner-box">
+												<div class="image">
+													<a href="instructor-profile.html" class="overlay-link"></a>
+													<img src="images/assets/programadora-background.jpg" alt="" />
+													<!-- Overlay Box -->
+													<div class="overlay-box">
+														<div class="overlay-inner">
+															<div class="overlay-content">
+																<!-- Author Image -->
+																<div class="author-image">
+																	<img src="images/assets/programadora.jpeg" alt="" />
+																</div>
+																<div class="name">Isabel Moncada</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										<!-- Feature Block -->
+										<div class="featured-block">
+											<div class="inner-box">
+												<div class="image">
+													<a href="instructor-profile.html" class="overlay-link"></a>
+													<img src="images/assets/programadora-background.jpg" alt="" />
+													<!-- Overlay Box -->
+													<div class="overlay-box">
+														<div class="overlay-inner">
+															<div class="overlay-content">
+																<!-- Author Image -->
+																<div class="author-image">
+																	<img src="images/assets/programadora.jpeg" alt="" />
+																</div>
+																<div class="name">Esthefany Marcano</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										<!-- Feature Block -->
+										<div class="featured-block">
+											<div class="inner-box">
+												<div class="image">
+													<a href="instructor-profile.html" class="overlay-link"></a>
+													<img src="images/assets/programador-background.jpg" alt="" />
+													<!-- Overlay Box -->
+													<div class="overlay-box">
+														<div class="overlay-inner">
+															<div class="overlay-content">
+																<!-- Author Image -->
+																<div class="author-image">
+																	<img src="images/assets/programador.jpg" alt="" />
+																</div>
+																<div class="name">José Rubio</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<!--  Support Widget -->
+                        <div class="sidebar-widget support-widget">
+							<div class="widget-content">
+								<h5>Estamos aquí para ayudarte</h5>
+								<div class="text">Nuestro equipo de soporte vela por ti 24/7.<br>Recibe ayuda inmediata sobre cualquiera de tus consultas</div>
+								<a href="#" class="theme-btn btn-style-one"><span class="txt">Centro de Soporte</span></a>
+								<!-- <a href="help.html" class="theme-btn btn-style-one"><span class="txt">Centro de Soporte</span></a> -->
+							</div>
+						</div>
+						
+					</aside>
+				</div>
+				
+				<!-- Content Side -->
+                <div class="content-side right-sidebar col-lg-9 col-md-12 col-sm-12">
+					<!-- Sec Title -->
+                	<div class="sec-title">
+						<div class="clearfix">
+							<div class="pull-left">
+								<h4>Cursos Destacados</h4>
+							</div>
+							<div class="pull-right">
+								<a href="featured-courses.html" class="see-all">Ver todo</a>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Featured Section -->
+					<div class="featured-section">
+						<div class="row clearfix">
+							
+							<!-- Feature Block Two -->
+							{% for course in courses %}
+
+							
+							<div class="feature-block-two col-lg-6 col-md-12 col-sm-12">
+								<div class="inner-box">
+									<div class="content">
+										<div class="image">
+											<a href="{% url 'course_detail' pk=course.pk %}"><img src="{% get_media_prefix %}{{course.img_main}}" alt="" /></a>
+										</div>
+										<h6><a href="{% url 'course_detail' pk=course.pk %}">{{course.title}}</a></h6>
+										<div class="text">{{course.description}}</div>
+										<div class="author">Por: <span>{{course.instructor}}</span></div>
+										<div class="clearfix">
+											<div class="pull-left">
+												<div class="rating">
+													<span class="fa fa-star"></span>
+													<span class="fa fa-star"></span>
+													<span class="fa fa-star"></span>
+													<span class="fa fa-star-o"></span>
+													<span class="dark fa fa-star-o"></span>
+												</div>
+											</div>
+											<div class="pull-right">
+												<div class="price">{{price}}</div>
+											</div>
+										</div>
+										
+										<!-- Featured Dropdown Box -->
+										<div class="eps_dots more_dropdown">
+											<a href="#"><span></span><i></i></a>
+											<div class="dropdown-content">
+												<span><i class='flaticon-share'></i>Compartir</span>
+												<span><i class="flaticon-down-arrow-1"></i>Guardar</span>
+												<span><i class='flaticon-cancel'></i>No me interesa</span>
+												<span><i class="flaticon-edit-2"></i>Reportar</span>
+											 </div>																										
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							{% endfor %}
+							
+						</div>
+					</div>
+					<!-- End Featured Section -->
+					
+					<!-- Courses Section -->
+					<div class="courses-section">
+						<!-- Sec Title -->
+						<div class="sec-title">
+							<div class="clearfix">
+								<div class="pull-left">
+									<h4>Ultimos Cursos</h4>
+								</div>
+								<div class="pull-right">
+									<a href="#" class="see-all">Ver todo</a>
+									<!-- <a href="latest-courses.html" class="see-all">Ver todo</a> -->
+								</div>
+							</div>
+						</div>
+						<div class="row clearfix">
+							{% for latest in latest_courses %}
+								<!-- Course Block -->
+								<div class="course-block col-lg-4 col-md-6 col-sm-12">
+									<div class="inner-box">
+										<div class="image">
+											<a href="course-lesson.html"><img src="{% get_media_prefix %}{{latest.img_main}}" alt="" /></a>
+											<div class="time">duration</div>
+										</div>
+										<div class="lower-content">
+											<h6><a href="course-lesson.html">{{latest.title}}</a></h6>
+											<ul class="post-meta">
+											<!-- Obtener el arbol de categorías o las categorías por medio de while-->
+												<li>Desarrollo</li>
+												<li>iOS</li>
+												<li>UI</li>
+												<li>UX</li>
+											</ul>
+											<div class="clearfix">
+												<div class="pull-left">
+													<div class="author">Por: <span>{{latest.instructor}}</span></div>
+												</div>
+												<div class="pull-right">
+													<div class="price">${{latest.price}}</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+							{% endfor %}
+							
+							
+						</div>
+					</div>
+					<!-- End Courses Section -->
+					
+					<!-- Team Section -->
+					<div class="team-section">
+						<!-- Sec Title -->
+						<div class="sec-title">
+							<div class="clearfix">
+								<div class="pull-left">
+									<h4>Instructores Populares</h4>
+								</div>
+								<div class="pull-right">
+									<a href="#" class="see-all">Ver todo</a>
+									<!-- <a href="team.html" class="see-all">Ver todo</a> -->
+								</div>
+							</div>
+						</div>
+						<div class="row clearfix">
+							{% for instructor in instructors %}
+								<!-- Team Block -->
+								<div class="team-block col-lg-3 col-md-6 col-sm-12">
+									<div class="inner-box">
+										<div class="image">
+											<a href="instructor-profile.html"><img src="images/assets/programador.jpg" alt="" /></a>
+										</div>
+										<div class="name"><a href="instructor-profile.html">{{instructor.name}}</a></div>
+										<div class="designation">Diseñador Web, <br>Soñador</div>
+										<div class="text">{{instructor.about}}}</div>
+										<div class="courses">{{instructor.courses_count}}, {{instructor.students_count}}</div>
+										<ul class="social-box">
+											<li class="facebook"><a href="#" class="fa fa-facebook"></a></li>
+											<li class="google"><a href="#" class="fa fa-google"></a></li>
+											<li class="twitter"><a href="#" class="fa fa-twitter"></a></li>
+										</ul>
+									</div>
+								</div>
+
+							{% endfor %}
+							
+						</div>
+					</div>
+					<!-- End Team Section -->
+					
+					<!-- Testimonial Section -->
+					<div class="testimonial-section">
+						<!-- Sec Title -->
+						<div class="sec-title">
+							<h4>Lo que dicen nuestros estudiantes</h4>
+						</div>
+						<div class="testimonial-carousel owl-carousel owl-theme">
+
+									{% comment %} <div class="testimonial-block">
+									<div class="inner-box">
+										<div class="quote flaticon-quote"></div>
+										<div class="image">
+											<img src="images/assets/virtual-events-studentt.jpg" alt="" />
+										</div>
+										<div class="name">Algo</div>
+										<div class="designation">Algo</div>
+										
+										<div class="text">Algo</div>
+									</div>
+								</div> {% endcomment %}
+
+							{% for opinion in opinions %}
+							<!-- Testimonial Block -->
+								{% if opinion.user.is_student %}
+									<div class="testimonial-block">
+									<div class="inner-box">
+										<div class="quote flaticon-quote"></div>
+										<div class="image">
+											<img src="images/assets/virtual-events-studentt.jpg" alt="" />
+										</div>
+										<div class="name">{{opinion.user}}</div>
+										<div class="designation">{{opinion.user}}</div>
+										
+										<div class="text">{{opinion.message}}</div>
+									</div>
+								</div>
+								{% endif %}
+							
+							{% endfor %}
+							
+						</div>
+					</div>
+					<!-- End Testimonial Section -->
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	<!-- Main Footer -->
+    <footer class="main-footer">
+		<!-- Pattern Layer -->
+		<div class="pattern-layer" style="background-image:url(images/background/pattern-2.png)"></div>
+		<div class="pattern-layer-two" style="background-image:url(images/background/pattern-3.png)"></div>
+		<!-- Upper Box -->
+		<div class="upper-box">
+			<div class="auto-container">
+				<h4>Suscribete para que conozcas <br> cada una de nuestras novedades</h4>
+				
+				<!-- Subscribe Form -->
+				<div class="subscribe-form">
+					<form method="post" action="contact.html">
+						<div class="form-group clearfix">
+							<span class="icon flaticon-mail"></span>
+							<input type="email" name="email" value="" placeholder="Por favor ingresa tu Email" required>
+							<button type="submit" class="theme-btn btn-style-one"><span class="txt">Suscribete ahora</span></button>
+						</div>
+					</form>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="auto-container">
+		
+        	<!-- Widgets Section -->
+            <div class="widgets-section">
+            	<div class="row clearfix">
+                	
+                    <!-- Big Column -->
+                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
+                        <div class="row clearfix">
+							
+							<!--Footer Column-->
+                            <div class="footer-column col-lg-7 col-md-6 col-sm-12">
+                                <div class="footer-widget logo-widget">
+									<div class="logo">
+                                    	<a href="index.html"><img src="images/assets/logo-getecursos-blanco-sin-slogan.png" alt="" /></a>
+                                    </div>
+									<div class="text">Aprende de manera online y presencial cerca de ti.</div>
+									<div class="social-box">
+										<a href="https://www.mosquedacordova.com/" target="_blank" class="fa fa-facebook-square"></a>
+										<a href="https://www.mosquedacordova.com/" target="_blank" class="fa fa-twitter-square"></a>
+										<a href="https://www.mosquedacordova.com/" target="_blank" class="fa fa-linkedin-square"></a>
+									</div>
+									
+								</div>
+							</div>
+							
+							<!--Footer Column-->
+                            <div class="footer-column col-lg-5 col-md-6 col-sm-12">
+                                <div class="footer-widget links-widget">
+									<ul class="links-widget">
+										<li><a href="#">Afiliados</a></li>
+										<li><a href="#">Socios</a></li>
+										<li><a href="#">Reseñas</a></li>
+										<li><a href="#">Blogs</a></li>
+									</ul>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					
+					<!-- Big Column -->
+                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
+                        <div class="row clearfix">
+							
+							<!--Footer Column-->
+                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                                <div class="footer-widget links-widget">
+									<ul class="links-widget">
+										<li><a href="#">Politica de Privacidad</a></li>
+										<li><a href="#">Area de Soporte</a></li>
+										<li><a href="#">Documentaciones</a></li>
+										<li><a href="#">Como funciona</a></li>
+										<!-- <li><a href="#">Terms of Policy</a></li> -->
+									</ul>
+								</div>
+							</div>
+							
+							<!--Footer Column-->
+                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                                <div class="footer-widget links-widget">
+									<ul class="links-widget">
+										<li><a href="index.html">Inicio</a></li>
+										<li><a href="#">Sobre nosotros</a></li>
+										<li><a href="#">Presentaciones</a></li>
+										<!-- <li><a href="price.html">Precios</a></li> -->
+										<li><a href="#">Precios</a></li>
+										<li><a href="#">Contacto</a></li>
+										<!-- <li><a href="contact.html">Contacto</a></li> -->
+									</ul>
+								</div>
+							</div>
+						
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<!-- Footer Bottom -->
+			<div class="footer-bottom text-center">
+				<div class="copyright">Copyright &copy; 2021 Mosqueda Córdova</div>
+			</div>
+			
+		</div>
+	</footer>
+	
+</div>
+<!-- End pagewrapper -->
+
+
+{% endblock %}
