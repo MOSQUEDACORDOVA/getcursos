@@ -24,18 +24,11 @@
 								</div>
 								<div class="content">
 									<ul>
-										<li><a href="#">Animación</a></li>
-										<li><a href="#">WordPress</a></li>
-										<li><a href="#">Bootstrap</a></li>
-										<li><a href="#">User Interface</a></li>
-										<li><a href="#">User Experience</a></li>
-										<li><a href="#">iOS</a></li>
-										<li><a href="#">Web Design</a></li>
-										<li><a href="#">Photoshop</a></li>
-										<li><a href="#">Responsive Design</a></li>
-										<li><a href="#">Figma</a></li>
-										<li><a href="#">Adobe XD</a></li>
-										<li><a href="#">Sketch</a></li>
+									{% for category in popular_tags %}
+									
+										<li><a href="#">{{category}}</a></li>
+									{% endfor %}
+										
 									</ul>
 								</div>
 							</div>
@@ -308,7 +301,7 @@
 							</div>
 						</div>
 						<div class="row clearfix">
-							{% for latest in latest-courses %}
+							{% for latest in latest_courses %}
 								<!-- Course Block -->
 								<div class="course-block col-lg-4 col-md-6 col-sm-12">
 									<div class="inner-box">
@@ -368,8 +361,8 @@
 										</div>
 										<div class="name"><a href="instructor-profile.html">{{instructor.name}}</a></div>
 										<div class="designation">Diseñador Web, <br>Soñador</div>
-										<div class="text">Aqui va una pequeña descripción muy cool sobre este profesor</div>
-										<div class="courses">3 Cursos, 20+ Studiantes</div>
+										<div class="text">{{instructor.about}}}</div>
+										<div class="courses">{{instructor.courses_count}}, {{instructor.students_count}}</div>
 										<ul class="social-box">
 											<li class="facebook"><a href="#" class="fa fa-facebook"></a></li>
 											<li class="google"><a href="#" class="fa fa-google"></a></li>
@@ -391,58 +384,38 @@
 							<h4>Lo que dicen nuestros estudiantes</h4>
 						</div>
 						<div class="testimonial-carousel owl-carousel owl-theme">
-							
-							<!-- Testimonial Block -->
-							<div class="testimonial-block">
-								<div class="inner-box">
-									<div class="quote flaticon-quote"></div>
-									<div class="image">
-										<img src="images/assets/virtual-events-studentt.jpg" alt="" />
+
+									{% comment %} <div class="testimonial-block">
+									<div class="inner-box">
+										<div class="quote flaticon-quote"></div>
+										<div class="image">
+											<img src="images/assets/virtual-events-studentt.jpg" alt="" />
+										</div>
+										<div class="name">Algo</div>
+										<div class="designation">Algo</div>
+										
+										<div class="text">Algo</div>
 									</div>
-									<div class="name">Camila Alvarez</div>
-									<div class="designation">Estudiante</div>
-									<div class="text">Aqui va un testimonio muy cool sobre la magnifica experiencia que tuvo esta persona durante su participación en el curso</div>
-								</div>
-							</div>
-							
+								</div> {% endcomment %}
+
+							{% for opinion in opinions %}
 							<!-- Testimonial Block -->
-							<div class="testimonial-block">
-								<div class="inner-box">
-									<div class="quote flaticon-quote"></div>
-									<div class="image">
-										<img src="images/assets/instructor-1.jpg" alt="" />
+								{% if opinion.user.is_student %}
+									<div class="testimonial-block">
+									<div class="inner-box">
+										<div class="quote flaticon-quote"></div>
+										<div class="image">
+											<img src="images/assets/virtual-events-studentt.jpg" alt="" />
+										</div>
+										<div class="name">{{opinion.user}}</div>
+										<div class="designation">{{opinion.user}}</div>
+										
+										<div class="text">{{opinion.message}}</div>
 									</div>
-									<div class="name">Carmine Maggio</div>
-									<div class="designation">Estudiante</div>
-									<div class="text">Aqui va un testimonio muy cool sobre la magnifica experiencia que tuvo esta persona durante su participación en el curso</div>
 								</div>
-							</div>
+								{% endif %}
 							
-							<!-- Testimonial Block -->
-							<div class="testimonial-block">
-								<div class="inner-box">
-									<div class="quote flaticon-quote"></div>
-									<div class="image">
-										<img src="images/assets/virtual-events-studentt.jpg" alt="" />
-									</div>
-									<div class="name">Camila Alvarez</div>
-									<div class="designation">Estudiante</div>
-									<div class="text">Aqui va un testimonio muy cool sobre la magnifica experiencia que tuvo esta persona durante su participación en el curso</div>
-								</div>
-							</div>
-							
-							<!-- Testimonial Block -->
-							<div class="testimonial-block">
-								<div class="inner-box">
-									<div class="quote flaticon-quote"></div>
-									<div class="image">
-										<img src="images/assets/instructor-1.jpg" alt="" />
-									</div>
-									<div class="name">Carmine Maggio</div>
-									<div class="designation">Estudiante</div>
-									<div class="text">Aqui va un testimonio muy cool sobre la magnifica experiencia que tuvo esta persona durante su participación en el curso</div>
-								</div>
-							</div>
+							{% endfor %}
 							
 						</div>
 					</div>

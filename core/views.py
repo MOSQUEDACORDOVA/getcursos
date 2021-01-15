@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views import View
-from .models import Category, Course
+from .models import Category, Course, Opinion, Tag
 
 # Create your views here.
 
@@ -19,8 +19,10 @@ class Index(Base):
         print(request, self.template_name)
         # todos los cursos
         courses = Course.objects.all()
-
-        return render(request, self.template_name, {"courses":courses})
+        latest_courses = Course.objects.order_by("-uploaded_date")
+        opinions = Opinion.objects.all()
+        popular_tags = Tag.objects.all()
+        return render(request, self.template_name, {"courses":courses, "latest_courses":latest_courses, "opinions":opinions, "popular_tags":popular_tags})
 
 
 class CourseView(Base):

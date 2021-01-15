@@ -6,3 +6,6 @@ from .models import *
 admin.site.register(UserExtended)
 admin.site.register(Course)
 admin.site.register(Category)
+admin.site.register(Opinion)
+admin.site.register(Video)
+admin.site.register(Tag)
