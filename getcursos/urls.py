@@ -23,5 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("", views.Index.as_view(), name="index"),
     # cursos
+    path("category/", views.CategoryPage.as_view(), name="category"),
     path("curso/<int:pk>", views.CourseView.as_view(), name="course_detail")
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
