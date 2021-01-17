@@ -61,7 +61,8 @@ a,
 .hidden-bar .pages-list li:hover a .icon, .hidden-bar .pages-list li.active a .icon,
 .main-header .header-right .options-box .notification-block .inner h3 a:hover,
 .main-header .header-right .options-box .notification-box .notification-box-btn:hover{
-	color: #0037ed;
+	/* color: #0037ed; */
+	color: #7D80F7;
 }
 
 /* Background Color */
@@ -107,7 +108,8 @@ a,
 .quiz-form .check-box input[type="checkbox"]:checked + label:after,
 .main-header .header-right .options-box .notification-box .notification-alert{
 	
-	background-color:#0037ed;
+	/* background-color:#0037ed; */
+	background-color:#7D80F7;
 }
 
 /* Light Background Color */
@@ -199,7 +201,8 @@ a,
 .quiz-form .form-group textarea:focus,
 .quiz-form .check-box input[type="checkbox"]:checked + label:before,
 .testview-section .inner-container .upper-box .certificate{
-	border-color:#0037ed;
+	/* border-color:#0037ed; */
+	border-color:#7D80F7;
 }
 
 /*RGBA Color Dark*/
