@@ -10,8 +10,9 @@ from django.contrib.auth import authenticate, login
 class Loged(View):
     def get(self, request, *args, **kwargs):
         if self.request.user.is_authenticated:
-            user = UserExtended(user=self.request.user)
+            user = UserExtended.objects.get(user=self.request.user)
             self.context["user_data"] = user
+            print(user.profile_pic)
         
            
 class Base(Loged):
