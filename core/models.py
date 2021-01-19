@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from datetime import datetime, timedelta
 from django.db.models.signals import post_save
-from django.core.validators import MaxValueValidator,MinValueValidator
+from django.core.validators import MaxValueValidator,MinValueValidator, FileExtensionValidator
 # Create your models here.
 # validator function
 
@@ -34,10 +34,11 @@ class UserExtended(models.Model):
     city = models.CharField(max_length=100)
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     about = models.TextField(max_length=450, default="")
+    phone = models.CharField(max_length=30, null=True)
     is_instructor = models.BooleanField(default=False)
     is_student = models.BooleanField(default=False)
     is_admin = models.BooleanField(default=False)
-    interested_tags = models.ManyToManyField(Tag)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, null=True)
     popular_index = models.PositiveSmallIntegerField(validators=[MaxValueValidator(5),MinValueValidator(1)], default=1, blank=True)
 
     def save(self, *args, **kwargs):
@@ -64,7 +65,7 @@ class Course(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE, null=True)
     tags = models.ManyToManyField(Tag)
     img_main = models.ImageField(upload_to="courses")
-    score = models.PositiveSmallIntegerField(validators=[MaxValueValidator(5),MinValueValidator(1)])
+    score = models.PositiveSmallIntegerField(validators=[MaxValueValidator(5),MinValueValidator(1)], default=1)
     price = models.FloatField(null=True)
     description = models.TextField(max_length=450, null=True)
     uploaded_date = models.DateTimeField(null=True, default=datetime.now())
@@ -78,8 +79,16 @@ class Course(models.Model):
 
     def __str__(self):
         return self.title
+
+
 class Lesson(models.Model):
     title = models.CharField(max_length=200)
+    description = models.TextField(max_length=500, null=True)
+
+
+class Topic(models.Model):
+    lesson = models.ForeignKey(Lesson, on_delete=models.CASCADE)
+    description = models.CharField(max_length=200)
 
 
 class Review(models.Model):
@@ -98,6 +107,7 @@ class Review(models.Model):
             self.score = 5
         
         super().save(*args,**kwargs)
+
 
 class Video(models.Model):
     # Videos de cada curso

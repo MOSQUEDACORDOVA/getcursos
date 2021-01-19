@@ -185,11 +185,11 @@
 								</div>
 							</div>
 							<!-- End Notification Box -->
-							
+							{{user_data.profile_pic}}
 							<!-- Profile Box -->
 							<div class="profile-box dropdown" id="someElementID5">
 								<div class="btn btn-default dropdown-toggle">
-									<span class="profile-image"><img src="images/assets/profile-1.jpg" alt="" /></span> <i class="arrow flaticon-down-arrow"></i>
+									<span class="profile-image"><img src="{% get_media_prefix %}{{user_data.first_name}}" alt="" /></span> <i class="arrow flaticon-down-arrow"></i>
 								</div>
 								<div class="profile-content">
 									<!-- <div class="setting"><a href="setting.html">Configuración</a></div> -->
@@ -212,8 +212,11 @@
 									</div>
 									<!-- Pages -->
 									<ul class="pages">
+									{% if not request.user.is_authenticated %}
+
 										<li><a href="login.html">Iniciar Sesion</a></li>
 										<li><a href="sign-up.html">Registrarte</a></li>
+									{% endif %}
 										<li><a href="#">Feedback</a></li>
 										<li><a href="#">Contáctanos</a></li>
 										<li><a href="#">Ayuda</a></li>

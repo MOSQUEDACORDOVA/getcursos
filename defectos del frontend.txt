@@ -1,1 +1,10 @@
 - en el index.html, en la sección de "Lo que dicen nuestros estudiantes", cuando hay solo una opinion se muestran dos de ellas (duplicadas), probablemente un bug con algún script js
+
+Por hacer
+
+- El encargado del forntend debe realizar una interfaz de administrador para poder insertar los siguientes items:
+	- Categorias
+	- subir videos por chunks
+	- 
+	-	
+	-
