@@ -23,7 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("", views.Index.as_view(), name="index"),
     # cursos
-    path("category/", views.CategoryPage.as_view(), name="category"),
+    path("category/<int:page>", views.CategoryPage.as_view(), name="category"),
     path("curso/<int:pk>", views.CourseView.as_view(), name="course_detail"),
     path("sign_up/", views.SignUp.as_view(), name="register"),
     path("login/", views.Login.as_view(), name="login"),

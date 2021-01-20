@@ -14,6 +14,10 @@
 				
 				<!-- Login Form -->
 				<div class="styled-form">
+					{% if request.GET.error %}
+						<small class="text-danger">Usuario o Contraseña Incorrecta</small>
+					
+					{% endif %}
 					<form method="post" action="{% url 'login' %}">
 						{% csrf_token %}
 						<!-- Form Group -->
@@ -45,7 +49,7 @@
 						</div>
 						
 						<div class="form-group">
-							<div class="users">¿Nuevo usuario? <a href="sign-up.html">Registrate</a></div>
+							<div class="users">¿Nuevo usuario? <a href="{% url 'register' %}">Registrate</a></div>
 						</div>
 						
 					</form>

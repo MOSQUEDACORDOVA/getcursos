@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, reverse
+from django.http import JsonResponse
 from django.views import View
 from django.views.generic import ListView
 from .models import Category, Course, Opinion, Tag, UserExtended
@@ -31,7 +32,11 @@ class CategoryPage(ListView, Base):
     template_name= "category.html"
     paginate_by = 3
     model = Category
-    #def get(self, request, *args, **kwargs):
+    """ def get(self, request, *args, **kwargs):
+        super().get(request, *args, **kwargs) """
+    """ def get_queryset(self):
+        categories = Category.objects.all() """
+
 
 
 class Login(Base):
@@ -58,7 +63,7 @@ class Login(Base):
                     login(request, result)
                     return redirect(reverse("index"))
                 else:
-                    return redirect(reverse("login")+"?error")
+                    return redirect(reverse("login")+"?error=ad")
             else:
                 return redirect(reverse("login")+"?not_registered")
 
@@ -115,11 +120,16 @@ class Index(Base):
         courses = Course.objects.order_by("-score")
         latest_courses = Course.objects.order_by("-uploaded_date")
         opinions = Opinion.objects.all()
-        popular_tags = Tag.objects.all()
+        popular_tags = Tag.objects.all()[:10]
         instructors = UserExtended.objects.filter(is_instructor=True)
         optimus_instructors = instructors.order_by("-popular_index")
-        categories = Category.objects.order_by("-course")
-        print(f"optimus {optimus_instructors}")
+        categories = Category.objects.order_by("-course__score").values()
+        categories_distinct = []
+        for i in categories:
+            if i not in categories_distinct:
+                categories_distinct.append(i)
+            
+        #print(f"optimus {optimus_instructors}")
         self.context.update(
             {
                 "courses":courses, 
@@ -128,11 +138,11 @@ class Index(Base):
                 "popular_tags":popular_tags, 
                 "instructors":instructors, 
                 "optimus_instructors":optimus_instructors,
-                "top_categories": categories
+                "top_categories": categories_distinct
                 }
                 
             )
-        
+        print(categories)
         return render(request, self.template_name,self.context)
 
 
