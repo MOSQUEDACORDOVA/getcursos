@@ -1,0 +1,31 @@
+{% load static %}
+<!-- Testimonial Section -->
+<div class="testimonial-section mt-5 mx-3">
+    <!-- Sec Title -->
+    <div class="sec-title">
+        <h4>Lo que dicen nuestros estudiantes</h4>
+    </div>
+    <div class="testimonial-carousel owl-carousel owl-theme">
+        
+        {% for opinion in opinions %}
+        <!-- Testimonial Block -->
+        {% if opinion.user.is_student %}
+        <div class="testimonial-block">
+            <div class="inner-box">
+                <div class="quote flaticon-quote"></div>
+                <div class="image">
+                    <img src="{% get_media_prefix %}{{opinion.user.profile_pic}}" alt="" />
+                </div>
+                <div class="name">{{opinion.user}}</div>
+                <div class="designation">{{opinion.user}}</div>
+
+                <div class="text">{{opinion.message}}</div>
+            </div>
+        </div>
+        {% endif %}
+
+        {% endfor %}
+
+    </div>
+</div>
+<!-- End Testimonial Section -->

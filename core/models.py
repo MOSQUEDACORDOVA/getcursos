@@ -50,6 +50,11 @@ class UserExtended(models.Model):
     def __str__(self):
         return self.user.username
 
+    def get_full_name(self):
+        return self.user.first_name +" "+self.user.last_name
+    def courses_count(self):
+        return len(self.course_set.all())
+
 
 class Social(models.Model):
     # Redes sociales del usuario
@@ -67,7 +72,8 @@ class Course(models.Model):
     img_main = models.ImageField(upload_to="courses")
     score = models.PositiveSmallIntegerField(validators=[MaxValueValidator(5),MinValueValidator(1)], default=1)
     price = models.FloatField(null=True)
-    description = models.TextField(max_length=450, null=True)
+    description = models.TextField(max_length=1000, null=True)
+    requirements = models.TextField(max_length=1000, null=True)
     uploaded_date = models.DateTimeField(null=True, default=datetime.now())
     students = models.ManyToManyField(UserExtended, related_name="students", blank=True)
 

@@ -1,0 +1,707 @@
+{% extends "core/side_bar.html" %}
+{% load static %}
+
+
+
+{% block content %}
+
+				<!-- Content Side -->
+                <div class="content-side middle-sidebar col-lg-6 col-md-12 col-sm-12">
+					<!-- Sec Title -->
+                	<div class="sec-title">
+						<h4>Aprende Desarrollo en iOS</h4>
+					</div>
+					<!-- Video Box -->
+					<div class="video-box">
+						<figure class="video-image">
+							<img src="images/assets/wallpaper_iOS14.jpg" alt="">
+						</figure>
+						<a href="https://www.youtube.com/watch?v=Turc0NbbjBc" class="lightbox-image overlay-box"><span class="flaticon-media-play-symbol"><i class="ripple"></i></span></a>
+					</div>
+					<!-- Video Info Boxed -->
+					<div class="video-info-boxed">
+						<div class="clearfix">
+							<div class="pull-left">
+								<h6>{{course.title}}</h6>
+								<div class="author">
+									<div class="user-image"><img src="images/assets/programadora.jpeg" alt="" /></div>{{course.instructor.get_full_name}}
+								</div>
+								<!-- Follow -->
+								<div class="follow"><a href="#">+ Seguir</a></div>
+							</div>
+							<div class="pull-right">
+								<ul class="social-box">
+									<li class="share">Compartelo en</li>
+									<li class="facebook"><a href="https://www.facebook.com" class="fa fa-facebook"></a></li>
+									<li class="google"><a href="#" class="fa fa-google"></a></li>
+									<li class="twitter"><a href="https://www.twitter.com" class="fa fa-twitter"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- End Video Info Boxed -->
+					
+					<!-- Course Info Tabs-->
+					<div class="course-info-tabs">
+						<!-- Course Tabs-->
+						<div class="course-tabs tabs-box">
+							
+							<!-- Tab Btns -->
+							<ul class="tab-btns tab-buttons clearfix">
+								<li data-tab="#prod-class" class="active-btn tab-btn">Detalles de clase</li>
+								<li data-tab="#prod-curriculum" class="tab-btn">Curriculum</li>
+								<!-- <li data-tab="#" class="tab-btn">Curriculum</li> -->
+								<li data-tab="#prod-review" class="tab-btn">Reviews</li>
+							</ul>
+							
+							<!-- Tabs Container -->
+							<div class="tabs-content">
+								
+								<!-- Tab / Active Tab -->
+								<div class="tab active-tab" id="prod-class">
+									<div class="content">
+										<!-- Class Detail Content -->
+										<div class="class-detail-content">
+											<h4>25. Que evita que los solicitantes de empleo superen el fracaso.</h4>
+											<div class="text">Aqui va una descripcion exacta del contenido epicodel curso, sugerimos mostrar los temas que se trataran, las herramientas que se van a usar y el nivel de conocimiento previo que debe tener el estudiante. En dado caso de que sea un curso avanzado, recordarle tomar los cursos basicos primero.</div>
+											<h6>¿Qué aprenderás?</h6>
+											<ul class="list-style-one">
+												<li>Lección epica que aprenderá el estudiante</li>
+												<li>Lección epica que aprenderá el estudiante</li>
+												<li>Lección epica que aprenderá el estudiante</li>
+												<li>Lección epica que aprenderá el estudiante</li>
+												<li>Lección epica que aprenderá el estudiante</li>
+												<li>Lección epica que aprenderá el estudiante</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								
+								<!-- Tab -->
+								<div class="tab" id="prod-curriculum">
+									<div class="content">
+										
+										<!-- Accordion Box -->
+										<ul class="accordion-box">
+
+											<!-- Block -->
+											<li class="accordion block">
+												<div class="acc-btn active"><div class="icon-outer"><span class="icon icon-plus flaticon-down-arrow"></span></div>1. UI/ UX Introduction</div>
+												<div class="acc-content current">
+													<div class="content">
+														<div class="clearfix">
+															<div class="pull-left">
+																<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image play-icon"><span class="fa fa-play"></span>What is UI/ UX Design?</a>
+															</div>
+															<div class="pull-right">
+																<div class="minutes">35 Minutes</div>
+															</div>
+														</div>
+													</div>
+													<div class="content">
+														<div class="clearfix">
+															<div class="pull-left">
+																<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image play-icon"><span class="fa fa-play"><i class="ripple"></i></span>What is UI/ UX Design?</a>
+															</div>
+															<div class="pull-right">
+																<div class="minutes">35 Minutes</div>
+															</div>
+														</div>
+													</div>
+													<div class="content">
+														<div class="clearfix">
+															<div class="pull-left">
+																<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image play-icon"><span class="fa fa-play"></span>What is UI/ UX Design?</a>
+															</div>
+															<div class="pull-right">
+																<div class="minutes">35 Minutes</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+
+											<!-- Block -->
+											<li class="accordion block">
+												<div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus flaticon-down-arrow"></span></div>2. UI/ UX Introduction</div>
+												<div class="acc-content">
+													<div class="content">
+														<div class="clearfix">
+															<div class="pull-left">
+																<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image play-icon"><span class="fa fa-play"></span>What is UI/ UX Design?</a>
+															</div>
+															<div class="pull-right">
+																<div class="minutes">35 Minutes</div>
+															</div>
+														</div>
+													</div>
+													<div class="content">
+														<div class="clearfix">
+															<div class="pull-left">
+																<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image play-icon"><span class="fa fa-play"><i class="ripple"></i></span>What is UI/ UX Design?</a>
+															</div>
+															<div class="pull-right">
+																<div class="minutes">35 Minutes</div>
+															</div>
+														</div>
+													</div>
+													<div class="content">
+														<div class="clearfix">
+															<div class="pull-left">
+																<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image play-icon"><span class="fa fa-play"></span>What is UI/ UX Design?</a>
+															</div>
+															<div class="pull-right">
+																<div class="minutes">35 Minutes</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											
+											<!-- Block -->
+											<li class="accordion block">
+												<div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus flaticon-down-arrow"></span></div>3. UI/ UX Introduction</div>
+												<div class="acc-content">
+													<div class="content">
+														<div class="clearfix">
+															<div class="pull-left">
+																<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image play-icon"><span class="fa fa-play"></span>What is UI/ UX Design?</a>
+															</div>
+															<div class="pull-right">
+																<div class="minutes">35 Minutes</div>
+															</div>
+														</div>
+													</div>
+													<div class="content">
+														<div class="clearfix">
+															<div class="pull-left">
+																<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image play-icon"><span class="fa fa-play"><i class="ripple"></i></span>What is UI/ UX Design?</a>
+															</div>
+															<div class="pull-right">
+																<div class="minutes">35 Minutes</div>
+															</div>
+														</div>
+													</div>
+													<div class="content">
+														<div class="clearfix">
+															<div class="pull-left">
+																<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image play-icon"><span class="fa fa-play"></span>What is UI/ UX Design?</a>
+															</div>
+															<div class="pull-right">
+																<div class="minutes">35 Minutes</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											
+											<!-- Block -->
+											<li class="accordion block">
+												<div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus flaticon-down-arrow"></span></div>4. UI/ UX Introduction</div>
+												<div class="acc-content">
+													<div class="content">
+														<div class="clearfix">
+															<div class="pull-left">
+																<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image play-icon"><span class="fa fa-play"></span>What is UI/ UX Design?</a>
+															</div>
+															<div class="pull-right">
+																<div class="minutes">35 Minutes</div>
+															</div>
+														</div>
+													</div>
+													<div class="content">
+														<div class="clearfix">
+															<div class="pull-left">
+																<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image play-icon"><span class="fa fa-play"><i class="ripple"></i></span>What is UI/ UX Design?</a>
+															</div>
+															<div class="pull-right">
+																<div class="minutes">35 Minutes</div>
+															</div>
+														</div>
+													</div>
+													<div class="content">
+														<div class="clearfix">
+															<div class="pull-left">
+																<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image play-icon"><span class="fa fa-play"></span>What is UI/ UX Design?</a>
+															</div>
+															<div class="pull-right">
+																<div class="minutes">35 Minutes</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											
+											<!-- Block -->
+											<li class="accordion block">
+												<div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus flaticon-down-arrow"></span></div>5. UI/ UX Introduction</div>
+												<div class="acc-content">
+													<div class="content">
+														<div class="clearfix">
+															<div class="pull-left">
+																<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image play-icon"><span class="fa fa-play"></span>What is UI/ UX Design?</a>
+															</div>
+															<div class="pull-right">
+																<div class="minutes">35 Minutes</div>
+															</div>
+														</div>
+													</div>
+													<div class="content">
+														<div class="clearfix">
+															<div class="pull-left">
+																<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image play-icon"><span class="fa fa-play"><i class="ripple"></i></span>What is UI/ UX Design?</a>
+															</div>
+															<div class="pull-right">
+																<div class="minutes">35 Minutes</div>
+															</div>
+														</div>
+													</div>
+													<div class="content">
+														<div class="clearfix">
+															<div class="pull-left">
+																<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image play-icon"><span class="fa fa-play"></span>What is UI/ UX Design?</a>
+															</div>
+															<div class="pull-right">
+																<div class="minutes">35 Minutes</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											
+											<!-- Block -->
+											<li class="accordion block">
+												<div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus flaticon-down-arrow"></span></div>6. UI/ UX Introduction</div>
+												<div class="acc-content">
+													<div class="content">
+														<div class="clearfix">
+															<div class="pull-left">
+																<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image play-icon"><span class="fa fa-play"></span>What is UI/ UX Design?</a>
+															</div>
+															<div class="pull-right">
+																<div class="minutes">35 Minutes</div>
+															</div>
+														</div>
+													</div>
+													<div class="content">
+														<div class="clearfix">
+															<div class="pull-left">
+																<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image play-icon"><span class="fa fa-play"><i class="ripple"></i></span>What is UI/ UX Design?</a>
+															</div>
+															<div class="pull-right">
+																<div class="minutes">35 Minutes</div>
+															</div>
+														</div>
+													</div>
+													<div class="content">
+														<div class="clearfix">
+															<div class="pull-left">
+																<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image play-icon"><span class="fa fa-play"></span>What is UI/ UX Design?</a>
+															</div>
+															<div class="pull-right">
+																<div class="minutes">35 Minutes</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											
+										</ul>
+										
+									</div>
+								</div>
+								
+								<!-- Tab -->
+								<div class="tab" id="prod-review">
+									<div class="content">
+										<div class="student-review-box">
+											<h6>Student Feedback</h6>
+											
+											<!-- Inner Student Review Box -->
+											<div class="inner-student-review-box">
+												<div class="row clearfix">
+													
+													<!-- Rating Column -->
+													<div class="rating-column col-lg-3 col-md-6 col-sm-12">
+														<div class="inner-column">
+															<div class="total-rating">4.2</div>
+															<div class="rating">
+																<span class="fa fa-star"></span>
+																<span class="fa fa-star"></span>
+																<span class="fa fa-star"></span>
+																<span class="fa fa-star"></span>
+																<span class="fa light fa-star-o"></span>
+															</div>
+															<div class="title">Course Rating</div>
+														</div>
+													</div>
+													<!-- Graph Column -->
+													<div class="graph-column col-lg-6 col-md-12 col-sm-12">
+														
+														<!-- Skills -->
+														<div class="skills">
+
+															<!-- Skill Item -->
+															<div class="skill-item">
+																<div class="skill-header clearfix">
+																	<div class="skill-percentage"><div class="count-box"><span class="count-text" data-speed="2000" data-stop="78">0</span>%</div></div>
+																</div>
+																<div class="skill-bar">
+																	<div class="bar-inner"><div class="bar progress-line" data-width="78"></div></div>
+																</div>
+															</div>
+
+															<!-- Skill Item -->
+															<div class="skill-item">
+																<div class="skill-header clearfix">
+																	<div class="skill-percentage"><div class="count-box"><span class="count-text" data-speed="2000" data-stop="60">0</span>%</div></div>
+																</div>
+																<div class="skill-bar">
+																	<div class="bar-inner"><div class="bar progress-line" data-width="60"></div></div>
+																</div>
+															</div>
+
+															<!-- Skill Item -->
+															<div class="skill-item">
+																<div class="skill-header clearfix">
+																	<div class="skill-percentage"><div class="count-box"><span class="count-text" data-speed="2000" data-stop="45">0</span>%</div></div>
+																</div>
+																<div class="skill-bar">
+																	<div class="bar-inner"><div class="bar progress-line" data-width="45"></div></div>
+																</div>
+															</div>
+															
+															<!-- Skill Item -->
+															<div class="skill-item">
+																<div class="skill-header clearfix">
+																	<div class="skill-percentage"><div class="count-box"><span class="count-text" data-speed="2000" data-stop="15">0</span>%</div></div>
+																</div>
+																<div class="skill-bar">
+																	<div class="bar-inner"><div class="bar progress-line" data-width="15"></div></div>
+																</div>
+															</div>
+
+															<!-- Skill Item -->
+															<div class="skill-item">
+																<div class="skill-header clearfix">
+																	<div class="skill-percentage"><div class="count-box"><span class="count-text" data-speed="2000" data-stop="1">0</span>%</div></div>
+																</div>
+																<div class="skill-bar">
+																	<div class="bar-inner"><div class="bar progress-line" data-width="1"></div></div>
+																</div>
+															</div>
+
+														</div>
+														
+													</div>
+													<!-- Stars Column -->
+													<div class="stars-column col-lg-3 col-md-6 col-sm-12">
+														
+														<div class="rating">
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa light fa-star-o"></span>
+															<i>78%</i>
+														</div>
+														
+														<div class="rating">
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa light fa-star-o"></span>
+															<i>60%</i>
+														</div>
+														
+														<div class="rating">
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa light fa-star-o"></span>
+															<i>45%</i>
+														</div>
+														
+														<div class="rating">
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa light fa-star-o"></span>
+															<i>15%</i>
+														</div>
+														
+														<div class="rating">
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa light fa-star-o"></span>
+															<i>1%</i>
+														</div>
+														
+													</div>
+													
+												</div>
+											</div>
+											
+										</div>
+										
+										<!-- Review Comments Box -->
+										<div class="review-comments-box">
+											<h6>Reseñas</h6>
+											
+											<!-- Reviewer Comment Box -->
+											<div class="reviewer-comment-box">
+												<h4>Anna Sthesia</h4>
+												<div class="rating">
+													<span class="total-rating">4.0</span> <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="light fa fa-star-o"></span>&ensp; 3 days ago
+												</div>
+												<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</div>
+												<div class="helpful">Was this review helpful?</div>
+												<ul class="like-option">
+													<li><span class="icon fa fa-thumbs-o-up"></span></li>
+													<li><span class="icon fa fa-thumbs-o-down"></span></li>
+													<li class="report">Report</li>
+												</ul>
+											</div>
+											
+											<!-- Reviewer Comment Box -->
+											<div class="reviewer-comment-box">
+												<h4>Stephane Smith</h4>
+												<div class="rating">
+													<span class="total-rating">4.0</span> <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="light fa fa-star-o"></span>&ensp; 3 days ago
+												</div>
+												<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</div>
+												<div class="helpful">Was this review helpful?</div>
+												<ul class="like-option">
+													<li><span class="icon fa fa-thumbs-o-up"></span></li>
+													<li><span class="icon fa fa-thumbs-o-down"></span></li>
+													<li class="report">Report</li>
+												</ul>
+											</div>
+											
+											<!-- Reviewer Comment Box -->
+											<div class="reviewer-comment-box">
+												<h4>Anna Mull</h4>
+												<div class="rating">
+													<span class="total-rating">4.0</span> <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="light fa fa-star-o"></span>&ensp; 3 days ago
+												</div>
+												<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</div>
+												<div class="helpful">Was this review helpful?</div>
+												<ul class="like-option">
+													<li><span class="icon fa fa-thumbs-o-up"></span></li>
+													<li><span class="icon fa fa-thumbs-o-down"></span></li>
+													<li class="report">Report</li>
+												</ul>
+											</div>
+											
+											<!-- Reviewer Comment Box -->
+											<div class="reviewer-comment-box">
+												<h4>Paul Molive</h4>
+												<div class="rating">
+													<span class="total-rating">4.0</span> <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="light fa fa-star-o"></span>&ensp; 3 days ago
+												</div>
+												<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</div>
+												<div class="helpful">Was this review helpful?</div>
+												<ul class="like-option">
+													<li><span class="icon fa fa-thumbs-o-up"></span></li>
+													<li><span class="icon fa fa-thumbs-o-down"></span></li>
+													<li class="report">Report</li>
+												</ul>
+											</div>
+											
+										</div>
+										
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+				<!-- Sidebar Side -->
+                <div class="sidebar-side right-sidebar col-lg-3 col-md-12 col-sm-12">
+                	<aside class="sidebar sticky-top">
+						
+						<!-- Review Widget -->
+						<div class="sidebar-widget review-widget">
+							<div class="widget-content">
+								<div class="content">
+									<!-- Video Box -->
+									<div class="intro-video" style="background-image: url(images/assets/swift-8.jpg)">
+										<a href="https://www.youtube.com/watch?v=Hz4XiQCIcjE" class="lightbox-image intro-video-box"><span class="fa fa-play"><i class="ripple"></i></span></a>
+										<h4>Vista Previa</h4>
+									</div>
+									<!-- End Video Box -->
+									<div class="price">$11.99</div>
+									<div class="time-left">Precio Original $199.99 <br> Discuento 94% off</div>
+									<div class="buttons-box">
+										<a href="#" class="theme-btn btn-style-two"><span class="txt">Detalles del Curso</span></a>
+										<a href="#" class="theme-btn btn-style-one"><span class="txt">Compralo ahora</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End Review Widget -->
+						
+						<!-- Similar Courses Widget -->
+                        <div class="sidebar-widget popular-posts">
+							<div class="widget-content">
+								<div class="sidebar-title">
+									<h6>Cursos Similares</h6>
+								</div>
+								<div class="content">
+									
+									<article class="post">
+										<div class="post-inner">
+											<figure class="post-thumb"><img src="images/assets/programacion-funcional-740x371.jpg" alt=""><a href="#" class="overlay-box"></a></figure>
+											<div class="text"><a href="#">Introducción a la Interfaz</a></div>
+											<div class="timing">Duración: 45:03min</div>
+										</div>
+									</article>
+									
+									<article class="post">
+										<div class="post-inner">
+											<figure class="post-thumb"><img src="images/assets/programacion-funcional-740x371.jpg" alt=""><a href="#" class="overlay-box"></a></figure>
+											<div class="text"><a href="#">Principios de la imagen ráster</a></div>
+											<div class="timing">Duración: 45:03min</div>
+										</div>
+									</article>
+									
+									<article class="post">
+										<div class="post-inner">
+											<figure class="post-thumb"><img src="images/assets/programacion-funcional-740x371.jpg" alt=""><a href="#" class="overlay-box"></a></figure>
+											<div class="text"><a href="#">Paneles y lugares de trabajo</a></div>
+											<div class="timing">Duración: 45:03min</div>
+										</div>
+									</article>
+									
+									<article class="post">
+										<div class="post-inner">
+											<figure class="post-thumb"><img src="images/assets/programacion-funcional-740x371.jpg" alt=""><a href="#" class="overlay-box"></a></figure>
+											<div class="text"><a href="#">Manipulación de Imagenes</a></div>
+											<div class="timing">Duración: 45:03min</div>
+										</div>
+									</article>
+									
+									<article class="post">
+										<div class="post-inner">
+											<figure class="post-thumb"><img src="images/assets/programacion-funcional-740x371.jpg" alt=""><a href="#" class="overlay-box"></a></figure>
+											<div class="text"><a href="#">Tipos de archivos comunes</a></div>
+											<div class="timing">Duración: 45:03min</div>
+										</div>
+									</article>
+									
+								</div>
+							</div>
+						</div>
+						<!-- End Similar Courses Widget -->
+						
+					</aside>
+				</div>
+				
+			</div>
+			
+			<!-- Courses Section -->
+			<div class="courses-section">
+				<!-- Sec Title -->
+				<div class="sec-title">
+					<div class="clearfix">
+						<div class="pull-left">
+							<h4>Cursos Populares</h4>
+						</div>
+						<div class="pull-right">
+							<a href="#" class="see-all">Ver todo</a>
+						</div>
+					</div>
+				</div>
+				<div class="row clearfix">
+					
+					<!-- Course Block -->
+					<div class="course-block col-lg-4 col-md-6 col-sm-12">
+						<div class="inner-box">
+							<div class="image">
+								<a href="course-lesson.html"><img src="images/assets/Big_Data.jpg" alt="" /></a>
+								<div class="time">13 horas</div>
+							</div>
+							<div class="lower-content">
+								<h6><a href="course-lesson.html">Conviertete en un Cientifico de la Big Data.</a></h6>
+								<ul class="post-meta">
+									<li>Desarrollo</li>
+									<li>Big Data</li>
+								</ul>
+								<div class="clearfix">
+									<div class="pull-left">
+										<div class="author">Por: <span>Carmine Maggio</span></div>
+									</div>
+									<div class="pull-right">
+										<div class="price">$15</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Course Block -->
+					<div class="course-block col-lg-4 col-md-6 col-sm-12">
+						<div class="inner-box">
+							<div class="image">
+								<a href="course-lesson.html"><img src="images/assets/ux-design.jpg" alt="" /></a>
+								<div class="time">13 horas</div>
+							</div>
+							<div class="lower-content">
+								<h6><a href="course-lesson.html">Especializate en Diseño de Experiencia de Usuario</a></h6>
+								<ul class="post-meta">
+									<li>Diseño</li>
+									<li>UX</li>
+								</ul>
+								<div class="clearfix">
+									<div class="pull-left">
+										<div class="author">Por: <span>isabel Moncada</span></div>
+									</div>
+									<div class="pull-right">
+										<div class="price">$15</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Course Block -->
+					<div class="course-block col-lg-4 col-md-6 col-sm-12">
+						<div class="inner-box">
+							<div class="image">
+								<a href="course-lesson.html"><img src="images/assets/do-modern-ui-ux-design-for-mobile-or-web.jpg" alt="" /></a>
+								<div class="time">13 horas</div>
+							</div>
+							<div class="lower-content">
+								<h6><a href="course-lesson.html">Curso de UI/UX</a></h6>
+								<ul class="post-meta">
+									<li>Diseño</li>
+									<li>UI</li>
+									<li>UX</li>
+								</ul>
+								<div class="clearfix">
+									<div class="pull-left">
+										<div class="author">por: <span>José Rubio</span></div>
+									</div>
+									<div class="pull-right">
+										<div class="price">$15</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<!-- End Courses Section -->
+			
+		</div>
+	</div>
+{% endblock %}

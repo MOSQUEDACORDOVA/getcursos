@@ -1,128 +1,141 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>getcursos | Inicio</title>
-<!-- Stylesheets -->
-<link href="{% static 'core/css/bootstrap.css' %}" rel="stylesheet">
-<link href="{% static 'core/css/main.css' %}" rel="stylesheet">
-<link href="{% static 'core/css/responsive.css' %}" rel="stylesheet">
+	<meta charset="utf-8">
+	<title>getcursos | Inicio</title>
+	<!-- Stylesheets -->
+	<link href="{% static 'core/css/bootstrap.css' %}" rel="stylesheet">
+	<link href="{% static 'core/css/main.css' %}" rel="stylesheet">
+	<link href="{% static 'core/css/responsive.css' %}" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+		rel="stylesheet">
 
-<!-- Color Switcher Mockup -->
-<link href="{% static 'core/css/color-switcher-design.css' %}" rel="stylesheet">
-<!-- Color Themes -->
-<link id="theme-color-file" href="{% static 'core/css/color-themes/theme-one.css' %}" rel="stylesheet">
+	<!-- Color Switcher Mockup -->
+	<link href="{% static 'core/css/color-switcher-design.css' %}" rel="stylesheet">
+	<!-- Color Themes -->
+	<link id="theme-color-file" href="{% static 'core/css/color-themes/theme-one.css' %}" rel="stylesheet">
 
-<link rel="shortcut icon" href="{% static 'core/images/favicon.png' %}" type="image/x-icon">
-<link rel="icon" href="{% static 'core/images/favicon.png' %}" type="image/x-icon">
+	<link rel="shortcut icon" href="{% static 'core/images/favicon.png' %}" type="image/x-icon">
+	<link rel="icon" href="{% static 'core/images/favicon.png' %}" type="image/x-icon">
 
-<!-- Responsive -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!-- Responsive -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+	<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 
 </head>
 
+
+
 <body class="">
-<div class="page-wrapper">
- 	
-    <!-- Preloader -->
-    <div class="preloader"></div>
- 	
-    <!-- Main Header-->
-    <header class="main-header">
-    	
-    	<!-- Header Upper -->
-        <div class="header-upper">
-        	<div class="outer-container">
-            	<div class="clearfix">
-                	
-					<!-- Header Left -->
-					<div class="header-left clearfix">
 
-						<!-- Left Sidebar Btn -->
-						<div class="left-sidebar-btn hidden-bar-opener">
-							<span class="icon flaticon-menu-2"></span>
-						</div>
-						
-						<div class="pull-left logo-box">
-							<div class="logo"><a href="{% url 'index' %}"><img src="{% static 'core/images/assets/logo-getcursos.png' %}" alt="" title=""></a></div>
-							<div class="dark-layout-logo logo pt-2"><a href="{% url 'index' %}"><img src="{% static 'core/images/assets/logo-get-cursos-blanco.png' %}" alt="" title=""></a></div>
-						</div>
-						
-						<!-- Search -->
-                        <div class="search-box">
-                        	<form method="post" action="contact.html">
-                                <div class="form-group">
-                                    <input type="search" name="search-field" value="" placeholder="Busca el nombre de un curso" required>
-                                    <button type="submit"><span class="icon fa fa-search"></span></button>
-                                </div>
-                            </form>
-						</div>
-						
-					</div>
-					
-					<!-- Header Right -->
-					<div class="header-right clearfix">
-						
-						<div class="nav-outer clearfix">
-                    
-							<!-- Main Menu -->
-							<nav class="main-menu navbar-expand-md">
-								<div class="navbar-header">
-									<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-									</button>
-								</div>
+	<div class="page-wrapper">
 
-								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
-									<ul class="navigation clearfix">
-										<li class="dropdown"><a href="#">Cursos</a>
-											<ul>
-												<li><a href="featured-courses.html">Cursos Destacados</a></li>
-												<li><a href="latest-courses.html">Ultimos Cursos</a></li>
-												<li><a href="category.html">Categorias</a></li>
-												<!-- <li><a href="course-detail.html">Course Landing</a></li> -->
-												<!-- <li><a href="course-lesson.html">Course Lesson</a></li> -->
-											</ul>
-										</li>
-										<li class="dropdown"><a href="#">Instructor</a>
-											<ul>
-												<li><a href="#">Tablero</a></li>
-												<li><a href="#">administrar Cursos</a></li>
-												<li><a href="#">Editar Cursos</a></li>
-												<li><a href="#">ganancias</a></li>
-												<li><a href="#">Perfil del instructor</a></li>
-												<!-- <li><a href="dashboard.html">Tablero</a></li>
+		<!-- Preloader -->
+		<div class="preloader"></div>
+
+		<!-- Main Header-->
+		<header class="main-header">
+
+			<!-- Header Upper -->
+			<div class="header-upper">
+				<div class="outer-container">
+					<div class="clearfix">
+
+						<!-- Header Left -->
+						<div class="header-left clearfix">
+
+							<!-- Left Sidebar Btn -->
+							<div class="left-sidebar-btn hidden-bar-opener">
+								<span class="icon flaticon-menu-2"></span>
+							</div>
+
+							<div class="pull-left logo-box">
+								<div class="logo"><a href="{% url 'index' %}"><img
+											src="{% static 'core/images/assets/logo-getcursos.png' %}" alt=""
+											title=""></a></div>
+								<div class="dark-layout-logo logo pt-2"><a href="{% url 'index' %}"><img
+											src="{% static 'core/images/assets/logo-get-cursos-blanco.png' %}" alt=""
+											title=""></a></div>
+							</div>
+
+							<!-- Search -->
+							<div class="search-box">
+								<form method="post" action="contact.html">
+									<div class="form-group">
+										<input type="search" name="search-field" value=""
+											placeholder="Busca el nombre de un curso" required>
+										<button type="submit"><span class="icon fa fa-search"></span></button>
+									</div>
+								</form>
+							</div>
+
+						</div>
+
+						<!-- Header Right -->
+						<div class="header-right clearfix">
+
+							<div class="nav-outer clearfix">
+
+								<!-- Main Menu -->
+								<nav class="main-menu navbar-expand-md">
+									<div class="navbar-header">
+										<button class="navbar-toggler" type="button" data-toggle="collapse"
+											data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+											aria-expanded="false" aria-label="Toggle navigation">
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+
+									<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+										<ul class="navigation clearfix">
+											<li class="dropdown"><a href="#">Cursos</a>
+												<ul>
+													<li><a href="featured-courses.html">Cursos Destacados</a></li>
+													<li><a href="latest-courses.html">Ultimos Cursos</a></li>
+													<li><a href="category.html">Categorias</a></li>
+													<!-- <li><a href="course-detail.html">Course Landing</a></li> -->
+													<!-- <li><a href="course-lesson.html">Course Lesson</a></li> -->
+												</ul>
+											</li>
+											<li class="dropdown"><a href="#">Instructor</a>
+												<ul>
+													<li><a href="#">Tablero</a></li>
+													<li><a href="#">administrar Cursos</a></li>
+													<li><a href="#">Editar Cursos</a></li>
+													<li><a href="#">ganancias</a></li>
+													<li><a href="#">Perfil del instructor</a></li>
+													<!-- <li><a href="dashboard.html">Tablero</a></li>
 												<li><a href="manage-course.html">administrar Cursos</a></li>
 												<li><a href="edit-course.html">Editar Cursos</a></li>
 												<li><a href="earning.html">ganancias</a></li>
 												<li><a href="instructor-profile.html">Perfil del instructor</a></li> -->
-												<!-- <li><a href="team.html">Popular Instructors</a></li> -->
-											</ul>
-										</li>
-										<li class="dropdown"><a href="#">Estudiante</a>
-											<ul>
-												<li><a href="#">Cursos Inscritos</a></li>
-												<li><a href="#">Centro de Certificados</a></li>
-												<li><a href="#">Pruebas</a></li>
-												<li><a href="#">Resultado de pruebas</a></li>
-												<li><a href="#">Perfil del estudiante</a></li>
-												<!-- <li><a href="enrolled-courses.html">Cursos Inscritos</a></li>
+													<!-- <li><a href="team.html">Popular Instructors</a></li> -->
+												</ul>
+											</li>
+											<li class="dropdown"><a href="#">Estudiante</a>
+												<ul>
+													<li><a href="#">Cursos Inscritos</a></li>
+													<li><a href="#">Centro de Certificados</a></li>
+													<li><a href="#">Pruebas</a></li>
+													<li><a href="#">Resultado de pruebas</a></li>
+													<li><a href="#">Perfil del estudiante</a></li>
+													<!-- <li><a href="enrolled-courses.html">Cursos Inscritos</a></li>
 												<li><a href="certificate.html">Centro de Certificados</a></li>
 												<li><a href="test.html">Pruebas</a></li>
 												<li><a href="result.html">Resultado de pruebas</a></li>
 												<li><a href="student-profile.html">Perfil del estudiante</a></li> -->
-											</ul>
-										</li>
-										<!-- <li class="dropdown"><a href="#">Secciones</a>
+												</ul>
+											</li>
+											<!-- <li class="dropdown"><a href="#">Secciones</a>
 											<ul>
 												<li><a href="price.html">Subscription</a></li>
 												<li><a href="blog.html">Blog</a></li>
@@ -132,191 +145,239 @@
 												<li><a href="checkout.html">Checkout</a></li>
 											</ul>
 										</li> -->
-									</ul>
-								</div>
-								
-							</nav>
-							
-						</div>
-						
-						<!-- Options Box -->
-						<div class="options-box clearfix">
-							
-							<!-- Message Box -->
-							<div class="message-box">
-								<a href="#" class="icon flaticon-envelope"></a>
-							</div>
-							<!-- End Message Box -->
-							
-							<!-- Notification Box -->
-							<div class="notification-box">
-								<div class="dropdown">
-									<button class="notification-box-btn dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flaticon-notification"></span><i class="notification-alert"></i></button>
-									<div class="dropdown-menu pull-right cart-panel" aria-labelledby="dropdownMenu">
+										</ul>
+									</div>
 
-										<div class="notification-block">
-											<div class="inner">
-												<div class="image"><img src="images/assets/programadora.jpeg" alt="" /></div>
-												<h3><a href="#">Jessica Yanez</a></h3>
-												<div class="notification-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, ratione ad aliquam laborum, veniam doloremque numquam natus quam possimus totam deleniti! Enim vitae reprehenderit architecto nobis eligendi, quod reiciendis maxime.</div>
-												<div class="post-time">15 min ago</div>
+								</nav>
+
+							</div>
+
+							<!-- Options Box -->
+							<div class="options-box clearfix">
+
+								<!-- Message Box -->
+								<div class="message-box">
+									<a href="#" class="icon flaticon-envelope"></a>
+								</div>
+								<!-- End Message Box -->
+
+								<!-- Notification Box -->
+								<div class="notification-box">
+									<div class="dropdown">
+										<button class="notification-box-btn dropdown-toggle" type="button"
+											id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true"
+											aria-expanded="false"><span class="flaticon-notification"></span><i
+												class="notification-alert"></i></button>
+										<div class="dropdown-menu pull-right cart-panel" aria-labelledby="dropdownMenu">
+
+											<div class="notification-block">
+												<div class="inner">
+													<div class="image"><img src="images/assets/programadora.jpeg"
+															alt="" /></div>
+													<h3><a href="#">Jessica Yanez</a></h3>
+													<div class="notification-text">Lorem ipsum dolor sit amet
+														consectetur adipisicing elit. Delectus, ratione ad aliquam
+														laborum, veniam doloremque numquam natus quam possimus totam
+														deleniti! Enim vitae reprehenderit architecto nobis eligendi,
+														quod reiciendis maxime.</div>
+													<div class="post-time">15 min ago</div>
+												</div>
 											</div>
-										</div>
-										<div class="notification-block">
-											<div class="inner">
-												<div class="image"><img src="images/assets/programador.jpg" alt="" /></div>
-												<h3><a href="#">Francisco Quevedo</a></h3>
-												<div class="notification-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, eos dicta deleniti repellendus accusamus dolores.</div>
-												<div class="post-time">15 min ago</div>
+											<div class="notification-block">
+												<div class="inner">
+													<div class="image"><img src="images/assets/programador.jpg"
+															alt="" /></div>
+													<h3><a href="#">Francisco Quevedo</a></h3>
+													<div class="notification-text">Lorem ipsum dolor sit, amet
+														consectetur adipisicing elit. Quidem, eos dicta deleniti
+														repellendus accusamus dolores.</div>
+													<div class="post-time">15 min ago</div>
+												</div>
 											</div>
-										</div>
-										<div class="notification-block">
-											<div class="inner">
-												<div class="image"><img src="images/assets/programador.jpg" alt="" /></div>
-												<h3><a href="#">Simon Briceño</a></h3>
-												<div class="notification-text">It is a long established fact that a reader will</div>
-												<div class="post-time">15 min ago</div>
+											<div class="notification-block">
+												<div class="inner">
+													<div class="image"><img src="images/assets/programador.jpg"
+															alt="" /></div>
+													<h3><a href="#">Simon Briceño</a></h3>
+													<div class="notification-text">It is a long established fact that a
+														reader will</div>
+													<div class="post-time">15 min ago</div>
+												</div>
 											</div>
+
+											<a href="#" class="view">View All</a>
+
 										</div>
-										
-										<a href="#" class="view">View All</a>
-										
 									</div>
 								</div>
-							</div>
-							<!-- End Notification Box -->
-							
-							<!-- Profile Box -->
-							<div class="profile-box dropdown" id="someElementID5">
-								<div class="btn btn-default dropdown-toggle">
-									<span class="profile-image"><img src="{% get_media_prefix %}{{user_data.profile_pic}}" alt="" /></span> <i class="arrow flaticon-down-arrow"></i>
-								</div>
-								<div class="profile-content">
-									<!-- <div class="setting"><a href="setting.html">Configuración</a></div> -->
-									<div class="setting"><a href="#">Configuración</a></div>
-									<!-- Dark Mode -->
-									<div class="dark-mode">
-										<div class="clearfix">
-											<div class="pull-left">
-												<div class="mode"><span class="icon"><img src="images/icons/moon.png" alt="" /></span> Dark Mode</div>
-											</div>
-											<div class="pull-right">
-												<!-- Dark Btns -->
-												<ul class="dark-buttons clearfix">
-													<li data-tab="#" class="off">Apagado</li>
-													<li class="boll"><span class="round"></span></li>
-													<li data-tab="#" class="on">Encendido</li>
-												</ul>	
+								<!-- End Notification Box -->
+
+								<!-- Profile Box -->
+								<div class="profile-box dropdown" id="someElementID5">
+									<div class="btn btn-default dropdown-toggle">
+										<span class="profile-image"><img
+												src="{% get_media_prefix %}{{request.user.userextended.profile_pic}}"
+												alt="" /></span> <i class="arrow flaticon-down-arrow"></i>
+									</div>
+									<div class="profile-content">
+										<!-- <div class="setting"><a href="setting.html">Configuración</a></div> -->
+										<div class="setting"><a href="#">Configuración</a></div>
+										<!-- Dark Mode -->
+										<div class="dark-mode">
+											<div class="clearfix">
+												<div class="pull-left">
+													<div class="mode"><span class="icon"><img
+																src="images/icons/moon.png" alt="" /></span> Dark Mode
+													</div>
+												</div>
+												<div class="pull-right">
+													<!-- Dark Btns -->
+													<ul class="dark-buttons clearfix">
+														<li data-tab="#" class="off">Apagado</li>
+														<li class="boll"><span class="round"></span></li>
+														<li data-tab="#" class="on">Encendido</li>
+													</ul>
+												</div>
 											</div>
 										</div>
-									</div>
-									<!-- Pages -->
-									<ul class="pages">
-									{% if not request.user.is_authenticated %}
+										<!-- Pages -->
+										<ul class="pages">
+											{% if not request.user.is_authenticated %}
 
-										<li><a href="{% url 'login' %}">Iniciar Sesion</a></li>
-										<li><a href="{% url 'register' %}">Registrarte</a></li>
-									{% endif %}
-										<li><a href="#">Feedback</a></li>
-										<li><a href="#">Contáctanos</a></li>
-										<li><a href="#">Ayuda</a></li>
-										<!-- <li><a href="feedback.html">Feedback</a></li> -->
-										<!-- <li><a href="contact.html">Contáctanos</a></li> -->
-										<!-- <li><a href="help.html">Ayuda</a></li> -->
-									</ul>
+											<li><a href="{% url 'login' %}">Iniciar Sesion</a></li>
+											<li><a href="{% url 'register' %}">Registrarte</a></li>
+											{% else %}
+
+											<li><a href="{% url 'logout' %}">Cerrar Sesión</a></li>
+											{% endif %}
+											<li><a href="#">Feedback</a></li>
+											<li><a href="#">Contáctanos</a></li>
+											<li><a href="#">Ayuda</a></li>
+											<!-- <li><a href="feedback.html">Feedback</a></li> -->
+											<!-- <li><a href="contact.html">Contáctanos</a></li> -->
+											<!-- <li><a href="help.html">Ayuda</a></li> -->
+										</ul>
+									</div>
 								</div>
+
 							</div>
-							
+
 						</div>
-						
+
 					</div>
-					
-                </div>
-            </div>
-        </div>
-               <!--End Header Upper-->
-        
-		<!-- Mobile Menu  -->
-        <div class="mobile-menu">
-            <div class="menu-backdrop"></div>
-            <div class="close-btn"><span class="icon fa fa-remove"></span></div>
-            
-            <nav class="menu-box">
-                <div class="nav-logo"><a href="{% url 'index' %}"><img src="images/assets/logo-getcursos.png" alt="" title=""></a></div>
-                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
-            </nav>
-        </div><!-- End Mobile Menu -->
-		
-    </header>
-    <!--End Main Header -->
-{% block content %}
-{% endblock %}
-<!-- Sidebar Nav -->
-<div class="sidenav-list">
-	<ul class="navbar">
-		<li><a href="{% url 'index' %}"><i class="icon flaticon-home"></i> <span><i class="flaticon-home"></i> Inicio</span></a></li>
-		<!-- <li><a href="course-lesson.html"><i class="icon flaticon-book"></i> <span><i class="flaticon-book"></i>Course Lesson</span></a></li> -->
-		<li><a href="{% url 'category' page=1 %}"><i class="icon flaticon-test"></i> <span><i class="flaticon-test"></i>Categorias</span></a></li>
-		<!-- <li><a href="dashboard.html"><i class="icon flaticon-report"></i> <span><i class="flaticon-report"></i>Dashboard</span></a></li> -->
-		<!-- <li><a href="manage-course.html"><i class="icon flaticon-test"></i> <span><i class="flaticon-test"></i>Manage Course</span></a></li> -->
-		<!-- <li><a href="earning.html"><i class="icon flaticon-pie-chart-1"></i> <span><i class="flaticon-pie-chart-1"></i>Earning</span></a></li> -->
-		<li><a href="enrolled-courses.html"><i class="icon flaticon-file"></i> <span><i class="flaticon-file"></i>Cursos Inscritos</span></a></li>
-		<li><a href="certificate.html"><i class="icon flaticon-new-window"></i> <span><i class="flaticon-new-window"></i>Certificados</span></a></li>		
-		<!-- <li><a href="team.html"><i class="icon flaticon-file"></i> <span><i class="flaticon-file"></i>Instructors</span></a></li> -->
-        <!-- <li><a href="contact.html"><i class="icon flaticon-contact"></i> <span><i class="flaticon-contact"></i>Contáctanos</span></a></li>	 -->
-        <li><a href="#"><i class="icon flaticon-contact"></i> <span><i class="flaticon-contact"></i>Contáctanos</span></a></li>	
-		<li><a href="#"><i class="icon flaticon-information"></i> <span><i class="flaticon-information"></i>Ayuda</span></a></li>
-		<!-- <li><a href="help.html"><i class="icon flaticon-information"></i> <span><i class="flaticon-information"></i>Ayuda</span></a></li> -->
-	</ul>
-</div>
-<!-- End Sidebar Nav -->
+				</div>
+			</div>
+			<!--End Header Upper-->
 
-<!-- Hidden Navigation Bar -->
-<section class="hidden-bar left-align">
-	<div class="color-layer"></div>
-	<div class="hidden-bar-closer">
-		<span class="flaticon-multiply"></span>
-	</div>
-	<!-- Hidden Bar Wrapper -->
-	<div class="hidden-bar-wrapper">
-		<ul class="pages-list">
-			<li class="active"><a href="{% url 'index' %}"><span class="icon flaticon-home"></span>Inicio</a></li>
-			<!-- <li><a href="featured-courses.html"><span class="icon flaticon-book"></span>Cursos Destacados</a></li> -->
-			<li><a href="#"><span class="icon flaticon-book"></span>Cursos Destacados</a></li>
-			<!-- <li><a href="course-lesson.html"><span class="icon flaticon-category"></span>Courses Lesson</a></li> -->
-			<li><a href="{% url 'category' page=1 %}"><span class="icon flaticon-test"></span>Categorias</a></li>		
-			<!-- <li><a href="latest-courses.html"><span class="icon flaticon-subscription"></span>Ultimos Cursos</a></li> -->
-			<li><a href="#"><span class="icon flaticon-subscription"></span>Ultimos Cursos</a></li>
-			<!-- <li><a href="course-detail.html"><span class="icon flaticon-new-window"></span>Course Landing</a></li> -->
-			<!-- <li><a href="team.html"><span class="icon flaticon-instructor"></span>Instructores</a></li> -->
-			<li><a href="#"><span class="icon flaticon-instructor"></span>Instructores</a></li>
-		</ul>
-		<div class="heading">Instructor</div>
-		<ul class="pages-list">
-			<!-- <li><a href="dashboard.html"><span class="icon flaticon-home"></span>Tablero</a></li> -->
-			<li><a href="#"><span class="icon flaticon-home"></span>Tablero</a></li>
-			<!-- <li><a href="manage-course.html"><span class="icon flaticon-test"></span>Administrar Cursos</a></li> -->
-			<li><a href="#"><span class="icon flaticon-test"></span>Administrar Cursos</a></li>
-			<!-- <li><a href="earning.html"><span class="icon flaticon-scholarship"></span>Ganancias</a></li> -->
-			<li><a href="#"><span class="icon flaticon-scholarship"></span>Ganancias</a></li>
-			<!-- <li><a href="edit-course.html"><span class="icon flaticon-report"></span>Editar Curso</a></li> -->
-			<li><a href="#"><span class="icon flaticon-report"></span>Editar Curso</a></li>
-			<!-- <li><a href="instructor-profile.html"><span class="icon flaticon-file"></span>Perfil del instructor</a></li> -->
-			<li><a href="#"><span class="icon flaticon-file"></span>Perfil del instructor</a></li>
-		</ul>
-		<div class="heading">Estudiantes</div>
-		<ul class="pages-list">
-			<!-- <li><a href="price.html"><span class="icon flaticon-money-bag"></span>Precios</a></li> -->
-			<li><a href="#"><span class="icon flaticon-money-bag"></span>Precios</a></li>
-			<!-- <li><a href="enrolled-courses.html"><span class="icon flaticon-test"></span>Cursos Inscritos</a></li> -->
-			<li><a href="#"><span class="icon flaticon-test"></span>Cursos Inscritos</a></li>
-			<!-- <li><a href="certificate.html"><span class="icon flaticon-skills"></span>Centro de Certificados</a></li> -->
-			<li><a href="#"><span class="icon flaticon-skills"></span>Centro de Certificados</a></li>
-			<!-- <li><a href="test.html"><span class="icon flaticon-quiz"></span>Quiz</a></li> -->
-			<!-- <li><a href="result.html"><span class="icon flaticon-document"></span>Quiz Result</a></li> -->
-			<!-- <li><a href="student-profile.html"><span class="icon flaticon-student"></span>Student Profile</a></li> -->
-		</ul>
-		<!-- <div class="heading">Pages</div>
+			<!-- Mobile Menu  -->
+			<div class="mobile-menu">
+				<div class="menu-backdrop"></div>
+				<div class="close-btn"><span class="icon fa fa-remove"></span></div>
+
+				<nav class="menu-box">
+					<div class="nav-logo"><a href="{% url 'index' %}"><img src="images/assets/logo-getcursos.png" alt=""
+								title=""></a></div>
+					<div class="menu-outer">
+						<!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+					</div>
+				</nav>
+			</div><!-- End Mobile Menu -->
+
+		</header>
+		<!--End Main Header -->
+		<!-- Sidebar Page Container -->
+		{% block normal %}
+		{% endblock %}
+		
+		{% if not login_request %}
+		<div class="sidebar-page-container">
+			<div class="auto-container">
+				<div class="row clearfix">
+					{% block sidenav%}
+
+					{% endblock %}
+					{% block content %}
+
+					{% endblock content %}
+				</div>
+			</div>
+		</div>
+		{% endif %}
+
+		<!-- Sidebar Nav -->
+		<div class="sidenav-list">
+			<ul class="navbar">
+				<li><a href="{% url 'index' %}"><i class="icon flaticon-home"></i> <span><i class="flaticon-home"></i>
+							Inicio</span></a></li>
+				<!-- <li><a href="course-lesson.html"><i class="icon flaticon-book"></i> <span><i class="flaticon-book"></i>Course Lesson</span></a></li> -->
+				<li><a href="{% url 'category' page=1 %}"><i class="icon flaticon-test"></i> <span><i
+								class="flaticon-test"></i>Categorias</span></a></li>
+				<!-- <li><a href="dashboard.html"><i class="icon flaticon-report"></i> <span><i class="flaticon-report"></i>Dashboard</span></a></li> -->
+				<!-- <li><a href="manage-course.html"><i class="icon flaticon-test"></i> <span><i class="flaticon-test"></i>Manage Course</span></a></li> -->
+				<!-- <li><a href="earning.html"><i class="icon flaticon-pie-chart-1"></i> <span><i class="flaticon-pie-chart-1"></i>Earning</span></a></li> -->
+				<li><a href="enrolled-courses.html"><i class="icon flaticon-file"></i> <span><i
+								class="flaticon-file"></i>Cursos Inscritos</span></a></li>
+				<li><a href="certificate.html"><i class="icon flaticon-new-window"></i> <span><i
+								class="flaticon-new-window"></i>Certificados</span></a></li>
+				<!-- <li><a href="team.html"><i class="icon flaticon-file"></i> <span><i class="flaticon-file"></i>Instructors</span></a></li> -->
+				<!-- <li><a href="contact.html"><i class="icon flaticon-contact"></i> <span><i class="flaticon-contact"></i>Contáctanos</span></a></li>	 -->
+				<li><a href="#"><i class="icon flaticon-contact"></i> <span><i
+								class="flaticon-contact"></i>Contáctanos</span></a></li>
+				<li><a href="#"><i class="icon flaticon-information"></i> <span><i
+								class="flaticon-information"></i>Ayuda</span></a></li>
+				<!-- <li><a href="help.html"><i class="icon flaticon-information"></i> <span><i class="flaticon-information"></i>Ayuda</span></a></li> -->
+			</ul>
+		</div>
+		<!-- End Sidebar Nav -->
+
+		<!-- Hidden Navigation Bar -->
+		<section class="hidden-bar left-align">
+			<div class="color-layer"></div>
+			<div class="hidden-bar-closer">
+				<span class="flaticon-multiply"></span>
+			</div>
+			<!-- Hidden Bar Wrapper -->
+			<div class="hidden-bar-wrapper">
+				<ul class="pages-list">
+					<li class="active"><a href="{% url 'index' %}"><span class="icon flaticon-home"></span>Inicio</a>
+					</li>
+					<!-- <li><a href="featured-courses.html"><span class="icon flaticon-book"></span>Cursos Destacados</a></li> -->
+					<li><a href="#"><span class="icon flaticon-book"></span>Cursos Destacados</a></li>
+					<!-- <li><a href="course-lesson.html"><span class="icon flaticon-category"></span>Courses Lesson</a></li> -->
+					<li><a href="{% url 'category' page=1 %}"><span class="icon flaticon-test"></span>Categorias</a>
+					</li>
+					<!-- <li><a href="latest-courses.html"><span class="icon flaticon-subscription"></span>Ultimos Cursos</a></li> -->
+					<li><a href="#"><span class="icon flaticon-subscription"></span>Ultimos Cursos</a></li>
+					<!-- <li><a href="course-detail.html"><span class="icon flaticon-new-window"></span>Course Landing</a></li> -->
+					<!-- <li><a href="team.html"><span class="icon flaticon-instructor"></span>Instructores</a></li> -->
+					<li><a href="#"><span class="icon flaticon-instructor"></span>Instructores</a></li>
+				</ul>
+				<div class="heading">Instructor</div>
+				<ul class="pages-list">
+					<!-- <li><a href="dashboard.html"><span class="icon flaticon-home"></span>Tablero</a></li> -->
+					<li><a href="#"><span class="icon flaticon-home"></span>Tablero</a></li>
+					<!-- <li><a href="manage-course.html"><span class="icon flaticon-test"></span>Administrar Cursos</a></li> -->
+					<li><a href="#"><span class="icon flaticon-test"></span>Administrar Cursos</a></li>
+					<!-- <li><a href="earning.html"><span class="icon flaticon-scholarship"></span>Ganancias</a></li> -->
+					<li><a href="#"><span class="icon flaticon-scholarship"></span>Ganancias</a></li>
+					<!-- <li><a href="edit-course.html"><span class="icon flaticon-report"></span>Editar Curso</a></li> -->
+					<li><a href="#"><span class="icon flaticon-report"></span>Editar Curso</a></li>
+					<!-- <li><a href="instructor-profile.html"><span class="icon flaticon-file"></span>Perfil del instructor</a></li> -->
+					<li><a href="#"><span class="icon flaticon-file"></span>Perfil del instructor</a></li>
+				</ul>
+				<div class="heading">Estudiantes</div>
+				<ul class="pages-list">
+					<!-- <li><a href="price.html"><span class="icon flaticon-money-bag"></span>Precios</a></li> -->
+					<li><a href="#"><span class="icon flaticon-money-bag"></span>Precios</a></li>
+					<!-- <li><a href="enrolled-courses.html"><span class="icon flaticon-test"></span>Cursos Inscritos</a></li> -->
+					<li><a href="#"><span class="icon flaticon-test"></span>Cursos Inscritos</a></li>
+					<!-- <li><a href="certificate.html"><span class="icon flaticon-skills"></span>Centro de Certificados</a></li> -->
+					<li><a href="#"><span class="icon flaticon-skills"></span>Centro de Certificados</a></li>
+					<!-- <li><a href="test.html"><span class="icon flaticon-quiz"></span>Quiz</a></li> -->
+					<!-- <li><a href="result.html"><span class="icon flaticon-document"></span>Quiz Result</a></li> -->
+					<!-- <li><a href="student-profile.html"><span class="icon flaticon-student"></span>Student Profile</a></li> -->
+				</ul>
+				<!-- <div class="heading">Pages</div>
 		<ul class="pages-list">
 			<li><a href="blog.html"><span class="icon flaticon-social-media"></span>Blog</a></li>
 			<li><a href="blog-detail.html"><span class="icon flaticon-article"></span>Blog Detail</a></li>
@@ -329,165 +390,181 @@
 			<li><a href="setting.html"><span class="icon flaticon-settings-1"></span>Settings</a></li>
 			<li><a href="help.html"><span class="icon flaticon-information"></span>Help</a></li>
 		</ul> -->
-	</div>
-	<!--Copyright Text-->
-	<div class="copyright-text">Copyright &copy; 2021 Mosqueda Cordova</div>
-</section>
+			</div>
+			<!--Copyright Text-->
+			<div class="copyright-text">Copyright &copy; 2021 Mosqueda Cordova</div>
+		</section>
 
-<!--Scroll to top-->
-<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-up"></span></div>
+		<!--Scroll to top-->
+		<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-up"></span></div>
 
-<!-- Color Palate / Color Switcher -->
-<div class="color-palate">
-    <div class="color-trigger">
-        <i class="fa fa-gear"></i>
-    </div>
-    <div class="color-palate-head">
-        <h6>Choose Your Color</h6>
-    </div>
-    <div class="various-color clearfix">
-        <div class="colors-list">
-            <span class="palate color-one active" data-theme-file="css/color-themes/theme-one.css"></span>
-            <span class="palate color-two" data-theme-file="css/color-themes/theme-two.css"></span>
-            <span class="palate color-three" data-theme-file="css/color-themes/theme-three.css"></span>
-            <span class="palate color-four" data-theme-file="css/color-themes/theme-four.css"></span>
-            <span class="palate color-five" data-theme-file="css/color-themes/theme-five.css"></span>
-            <span class="palate color-six" data-theme-file="css/color-themes/theme-six.css"></span>
-            <span class="palate color-seven" data-theme-file="css/color-themes/theme-seven.css"></span>
-            <span class="palate color-eight" data-theme-file="css/color-themes/theme-eight.css"></span>
-			<span class="palate color-nine" data-theme-file="css/color-themes/theme-nine.css"></span>
-			<span class="palate color-ten" data-theme-file="css/color-themes/theme-ten.css"></span>
-			<span class="palate color-eleven" data-theme-file="css/color-themes/theme-eleven.css"></span>
-			<span class="palate color-twelve" data-theme-file="css/color-themes/theme-twelve.css"></span>
-        </div>
-    </div>
+		<!-- Color Palate / Color Switcher -->
+		<div class="color-palate">
+			<div class="color-trigger">
+				<i class="fa fa-gear"></i>
+			</div>
+			<div class="color-palate-head">
+				<h6>Choose Your Color</h6>
+			</div>
+			<div class="various-color clearfix">
+				<div class="colors-list">
+					<span class="palate color-one active" data-theme-file="css/color-themes/theme-one.css"></span>
+					<span class="palate color-two" data-theme-file="css/color-themes/theme-two.css"></span>
+					<span class="palate color-three" data-theme-file="css/color-themes/theme-three.css"></span>
+					<span class="palate color-four" data-theme-file="css/color-themes/theme-four.css"></span>
+					<span class="palate color-five" data-theme-file="css/color-themes/theme-five.css"></span>
+					<span class="palate color-six" data-theme-file="css/color-themes/theme-six.css"></span>
+					<span class="palate color-seven" data-theme-file="css/color-themes/theme-seven.css"></span>
+					<span class="palate color-eight" data-theme-file="css/color-themes/theme-eight.css"></span>
+					<span class="palate color-nine" data-theme-file="css/color-themes/theme-nine.css"></span>
+					<span class="palate color-ten" data-theme-file="css/color-themes/theme-ten.css"></span>
+					<span class="palate color-eleven" data-theme-file="css/color-themes/theme-eleven.css"></span>
+					<span class="palate color-twelve" data-theme-file="css/color-themes/theme-twelve.css"></span>
+				</div>
+			</div>
 
-</div>
-	
-	<!-- Main Footer -->
-    <footer class="main-footer">
-		<!-- Pattern Layer -->
-		<div class="pattern-layer" style="background-image:url(images/background/pattern-2.png)"></div>
-		<div class="pattern-layer-two" style="background-image:url(images/background/pattern-3.png)"></div>
-		<!-- Upper Box -->
-		<div class="upper-box">
+		</div>
+
+		{% block featured %}
+		
+		{% endblock %}
+
+		{% if not login_request %}
+		
+		<!-- Main Footer -->
+		<footer class="main-footer">
+			<!-- Pattern Layer -->
+			<div class="pattern-layer" style="background-image:url({% static 'core/images/background/pattern-2.png' %})"></div>
+			<div class="pattern-layer-two" style="background-image:url({% static 'core/images/background/pattern-3.png)'%}"></div>
+			<!-- Upper Box -->
+			<div class="upper-box">
+				<div class="auto-container">
+					<h4>Suscribete para que conozcas <br> cada una de nuestras novedades</h4>
+
+					<!-- Subscribe Form -->
+					<div class="subscribe-form">
+						<form method="post" action="contact.html">
+							<div class="form-group clearfix">
+								<span class="icon flaticon-mail"></span>
+								<input type="email" name="email" value="" placeholder="Por favor ingresa tu Email"
+									required>
+								<button type="submit" class="theme-btn btn-style-one"><span class="txt">Suscribete
+										ahora</span></button>
+							</div>
+						</form>
+					</div>
+
+				</div>
+			</div>
+
 			<div class="auto-container">
-				<h4>Suscribete para que conozcas <br> cada una de nuestras novedades</h4>
-				
-				<!-- Subscribe Form -->
-				<div class="subscribe-form">
-					<form method="post" action="contact.html">
-						<div class="form-group clearfix">
-							<span class="icon flaticon-mail"></span>
-							<input type="email" name="email" value="" placeholder="Por favor ingresa tu Email" required>
-							<button type="submit" class="theme-btn btn-style-one"><span class="txt">Suscribete ahora</span></button>
-						</div>
-					</form>
-				</div>
-				
-			</div>
-		</div>
-		
-		<div class="auto-container">
-		
-        	<!-- Widgets Section -->
-            <div class="widgets-section">
-            	<div class="row clearfix">
-                	
-                    <!-- Big Column -->
-                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
-                        <div class="row clearfix">
-							
-							<!--Footer Column-->
-                            <div class="footer-column col-lg-7 col-md-6 col-sm-12">
-                                <div class="footer-widget logo-widget">
-									<div class="logo">
-                                    	<a href="index.html"><img src="{% static 'core/images/assets/logo-getecursos-blanco-sin-slogan.png' %}" alt="" /></a>
-                                    </div>
-									<div class="text">Aprende de manera online y presencial cerca de ti.</div>
-									<div class="social-box">
-										<a href="https://www.mosquedacordova.com/" target="_blank" class="fa fa-facebook-square"></a>
-										<a href="https://www.mosquedacordova.com/" target="_blank" class="fa fa-twitter-square"></a>
-										<a href="https://www.mosquedacordova.com/" target="_blank" class="fa fa-linkedin-square"></a>
+
+				<!-- Widgets Section -->
+				<div class="widgets-section">
+					<div class="row clearfix">
+
+						<!-- Big Column -->
+						<div class="big-column col-lg-6 col-md-12 col-sm-12">
+							<div class="row clearfix">
+
+								<!--Footer Column-->
+								<div class="footer-column col-lg-7 col-md-6 col-sm-12">
+									<div class="footer-widget logo-widget">
+										<div class="logo">
+											<a href="index.html"><img
+													src="{% static 'core/images/assets/logo-getecursos-blanco-sin-slogan.png' %}"
+													alt="" /></a>
+										</div>
+										<div class="text">Aprende de manera online y presencial cerca de ti.</div>
+										<div class="social-box">
+											<a href="https://www.mosquedacordova.com/" target="_blank"
+												class="fa fa-facebook-square"></a>
+											<a href="https://www.mosquedacordova.com/" target="_blank"
+												class="fa fa-twitter-square"></a>
+											<a href="https://www.mosquedacordova.com/" target="_blank"
+												class="fa fa-linkedin-square"></a>
+										</div>
+
 									</div>
-									
 								</div>
-							</div>
-							
-							<!--Footer Column-->
-                            <div class="footer-column col-lg-5 col-md-6 col-sm-12">
-                                <div class="footer-widget links-widget">
-									<ul class="links-widget">
-										<li><a href="#">Afiliados</a></li>
-										<li><a href="#">Socios</a></li>
-										<li><a href="#">Reseñas</a></li>
-										<li><a href="#">Blogs</a></li>
-									</ul>
+
+								<!--Footer Column-->
+								<div class="footer-column col-lg-5 col-md-6 col-sm-12">
+									<div class="footer-widget links-widget">
+										<ul class="links-widget">
+											<li><a href="#">Afiliados</a></li>
+											<li><a href="#">Socios</a></li>
+											<li><a href="#">Reseñas</a></li>
+											<li><a href="#">Blogs</a></li>
+										</ul>
+									</div>
 								</div>
+
 							</div>
-							
 						</div>
-					</div>
-					
-					<!-- Big Column -->
-                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
-                        <div class="row clearfix">
-							
-							<!--Footer Column-->
-                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
-                                <div class="footer-widget links-widget">
-									<ul class="links-widget">
-										<li><a href="#">Politica de Privacidad</a></li>
-										<li><a href="#">Area de Soporte</a></li>
-										<li><a href="#">Documentaciones</a></li>
-										<li><a href="#">Como funciona</a></li>
-										<!-- <li><a href="#">Terms of Policy</a></li> -->
-									</ul>
+
+						<!-- Big Column -->
+						<div class="big-column col-lg-6 col-md-12 col-sm-12">
+							<div class="row clearfix">
+
+								<!--Footer Column-->
+								<div class="footer-column col-lg-6 col-md-6 col-sm-12">
+									<div class="footer-widget links-widget">
+										<ul class="links-widget">
+											<li><a href="#">Politica de Privacidad</a></li>
+											<li><a href="#">Area de Soporte</a></li>
+											<li><a href="#">Documentaciones</a></li>
+											<li><a href="#">Como funciona</a></li>
+											<!-- <li><a href="#">Terms of Policy</a></li> -->
+										</ul>
+									</div>
 								</div>
-							</div>
-							
-							<!--Footer Column-->
-                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
-                                <div class="footer-widget links-widget">
-									<ul class="links-widget">
-										<li><a href="index.html">Inicio</a></li>
-										<li><a href="#">Sobre nosotros</a></li>
-										<li><a href="#">Presentaciones</a></li>
-										<!-- <li><a href="price.html">Precios</a></li> -->
-										<li><a href="#">Precios</a></li>
-										<li><a href="#">Contacto</a></li>
-										<!-- <li><a href="contact.html">Contacto</a></li> -->
-									</ul>
+
+								<!--Footer Column-->
+								<div class="footer-column col-lg-6 col-md-6 col-sm-12">
+									<div class="footer-widget links-widget">
+										<ul class="links-widget">
+											<li><a href="{% url 'index' %}">Inicio</a></li>
+											<li><a href="#">Sobre nosotros</a></li>
+											<li><a href="#">Presentaciones</a></li>
+											<!-- <li><a href="price.html">Precios</a></li> -->
+											<li><a href="#">Precios</a></li>
+											<li><a href="#">Contacto</a></li>
+											<!-- <li><a href="contact.html">Contacto</a></li> -->
+										</ul>
+									</div>
 								</div>
+
 							</div>
-						
 						</div>
+
 					</div>
-					
 				</div>
+
+				<!-- Footer Bottom -->
+				<div class="footer-bottom text-center">
+					<div class="copyright">Copyright &copy; 2021 Mosqueda Córdova</div>
+				</div>
+
 			</div>
-			
-			<!-- Footer Bottom -->
-			<div class="footer-bottom text-center">
-				<div class="copyright">Copyright &copy; 2021 Mosqueda Córdova</div>
-			</div>
-			
-		</div>
-	</footer>
-	
-</div>
-<!-- End pagewrapper -->
-<script src="{% static 'core/js/jquery.js' %}"></script>
-<script src="{% static 'core/js/popper.min.js' %}"></script>
-<script src="{% static 'core/js/bootstrap.min.js' %}"></script>
-<script src="{% static 'core/js/jquery.fancybox.js' %}"></script>
-<script src="{% static 'core/js/appear.js' %}"></script>
-<script src="{% static 'core/js/isotope.js' %}"></script>
-<script src="{% static 'core/js/owl.js' %}"></script>
-<script src="{% static 'core/js/wow.js' %}"></script>
-<script src="{% static 'core/js/jquery-ui.js' %}"></script>
-<script src="{% static 'core/js/script.js' %}"></script>
-<script src="{% static 'core/js/color-settings.js' %}"></script>
+		</footer>
+		{% endif %}
+	</div>
+	<!-- End pagewrapper -->
+	<script src="{% static 'core/js/jquery.js' %}"></script>
+	<script src="{% static 'core/js/popper.min.js' %}"></script>
+	<script src="{% static 'core/js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'core/js/jquery.fancybox.js' %}"></script>
+	<script src="{% static 'core/js/appear.js' %}"></script>
+	<script src="{% static 'core/js/isotope.js' %}"></script>
+	<script src="{% static 'core/js/owl.js' %}"></script>
+	<script src="{% static 'core/js/wow.js' %}"></script>
+	<script src="{% static 'core/js/jquery-ui.js' %}"></script>
+	<script src="{% static 'core/js/script.js' %}"></script>
+	<script src="{% static 'core/js/color-settings.js' %}"></script>
+	<script src="{% static 'core/js/functions.js' %}"></script>
+
 
 </body>
+
 </html>

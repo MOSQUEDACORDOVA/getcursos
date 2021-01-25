@@ -1,0 +1,289 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+
+{% block normal %}
+	<!-- Course Detail Section -->
+    <div class="course-detail-section">
+    	<div class="auto-container">
+			<div class="upper-content">
+				<div class="row clearfix">
+					
+					<!-- Left Column -->
+					<div class="left-column col-lg-4 col-md-12 col-sm-12">
+						<div class="inner-column">
+							<!-- Video Box -->
+							<div class="intro-video" style="background-image: url(images/resource/video-image-2.jpg)">
+								<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image intro-video-box"><span class="fa fa-play"><i class="ripple"></i></span></a>
+								<h4>Preview this course</h4>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Right Column -->
+					<div class="right-column col-lg-8 col-md-12 col-sm-12">
+						<div class="inner-column">
+							<h2>{{course.title}}</h2>
+							<div class="sub-text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</div>
+							<div class="rating"><span class="rate">{{course.score}} <i class="fa fa-star"></i></span><span class="total-rating">45,668 Ratings</span></div>
+							<div class="price">Course Price: <span>${{course.price}}</span></div>
+							<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+							<div class="buttons-box">
+								<a href="#" class="theme-btn btn-style-two"><span class="txt">Add To Cart</span></a>
+								<a href="#" class="theme-btn btn-style-one"><span class="txt">Buy Now</span></a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+				<!-- Course Detail Info Boxed -->
+				<div class="course-detail-info-boxed">
+					<div class="clearfix">
+						<div class="pull-left">
+							<div class="author">
+								<div class="user-image"><img src="images/resource/author-14.jpg" alt="" /></div>Kerry Oaky
+							</div>
+							<!-- Follow -->
+							<div class="follow"><a href="#">+ Subscribe</a></div>
+						</div>
+						<div class="pull-right">
+							<ul class="social-box">
+								<li class="share">Share now on</li>
+								<li class="facebook"><a href="#" class="fa fa-facebook"></a></li>
+								<li class="google"><a href="#" class="fa fa-google"></a></li>
+								<li class="twitter"><a href="#" class="fa fa-twitter"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- End Course Detail Info Boxed -->
+				
+			</div>
+			
+			<!-- Lower Content -->
+			<div class="lower-content">
+				
+				<!-- Instructor Info Tabs-->
+				<div class="instructor-info-tabs">
+					<!-- Instructor Tabs-->
+					<div class="instructor-tabs tabs-box">
+						
+						<!-- Tab Btns -->
+						<ul class="tab-btns tab-buttons clearfix">
+							<li data-tab="#prod-about" class="active-btn tab-btn">About</li>
+							<li data-tab="#prod-course" class="tab-btn">Course Content</li>
+							<li data-tab="#prod-review" class="tab-btn">Reviews</li>
+						</ul>
+						
+						<!-- Tabs Container -->
+						<div class="tabs-content">
+							
+							<!-- Tab / Active Tab -->
+							<div class="tab active-tab" id="prod-about">
+								<div class="content">
+									<h6>Requisitos Previos</h6>
+									<div class="text">
+										{{course.requirements}}
+									</div>
+									<ul class="list-style-one">
+										<li>Phasellus enim magna, up above the most like varius et commodo ut.</li>
+										
+									</ul>
+								</div>
+							</div>
+							
+							<!-- Tab  -->
+							<div class="tab" id="prod-course">
+								<div class="content">
+									<h6>Course Content</h6>
+									<div class="text">
+										{{course.description}}									
+										</div>
+								</div>
+							</div>
+							
+							<!-- Tab  -->
+							<div class="tab" id="prod-review">
+								<div class="content">
+									
+									<div class="student-review-box">
+										<h6>Student Feedback</h6>
+											
+											<!-- Inner Student Review Box -->
+											<div class="inner-student-review-box">
+												<div class="row clearfix">
+													
+													<!-- Rating Column -->
+													<div class="rating-column col-lg-3 col-md-6 col-sm-12">
+														<div class="inner-column">
+															<div class="total-rating">{{course.score}}</div>
+															<div class="rating">
+																<span class="fa fa-star"></span>
+																<span class="fa fa-star"></span>
+																<span class="fa fa-star"></span>
+																<span class="fa fa-star"></span>
+																<span class="fa light fa-star-o"></span>
+															</div>
+															<div class="title">Course Rating</div>
+														</div>
+													</div>
+													<!-- Graph Column -->
+													<div class="graph-column col-lg-6 col-md-12 col-sm-12">
+														
+														<!-- Skills -->
+														<div class="skills">
+
+															<!-- Skill Item -->
+															<div class="skill-item">
+																<div class="skill-header clearfix">
+																	<div class="skill-percentage"><div class="count-box"><span class="count-text" data-speed="2000" data-stop="78">0</span>%</div></div>
+																</div>
+																<div class="skill-bar">
+																	<div class="bar-inner"><div class="bar progress-line" data-width="78"></div></div>
+																</div>
+															</div>
+
+															<!-- Skill Item -->
+															<div class="skill-item">
+																<div class="skill-header clearfix">
+																	<div class="skill-percentage"><div class="count-box"><span class="count-text" data-speed="2000" data-stop="60">0</span>%</div></div>
+																</div>
+																<div class="skill-bar">
+																	<div class="bar-inner"><div class="bar progress-line" data-width="60"></div></div>
+																</div>
+															</div>
+
+															<!-- Skill Item -->
+															<div class="skill-item">
+																<div class="skill-header clearfix">
+																	<div class="skill-percentage"><div class="count-box"><span class="count-text" data-speed="2000" data-stop="45">0</span>%</div></div>
+																</div>
+																<div class="skill-bar">
+																	<div class="bar-inner"><div class="bar progress-line" data-width="45"></div></div>
+																</div>
+															</div>
+															
+															<!-- Skill Item -->
+															<div class="skill-item">
+																<div class="skill-header clearfix">
+																	<div class="skill-percentage"><div class="count-box"><span class="count-text" data-speed="2000" data-stop="15">0</span>%</div></div>
+																</div>
+																<div class="skill-bar">
+																	<div class="bar-inner"><div class="bar progress-line" data-width="15"></div></div>
+																</div>
+															</div>
+
+															<!-- Skill Item -->
+															<div class="skill-item">
+																<div class="skill-header clearfix">
+																	<div class="skill-percentage"><div class="count-box"><span class="count-text" data-speed="2000" data-stop="1">0</span>%</div></div>
+																</div>
+																<div class="skill-bar">
+																	<div class="bar-inner"><div class="bar progress-line" data-width="1"></div></div>
+																</div>
+															</div>
+
+														</div>
+														
+													</div>
+													<!-- Stars Column -->
+													<div class="stars-column col-lg-3 col-md-6 col-sm-12">
+														
+														<div class="rating">
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa light fa-star-o"></span>
+															<i>78%</i>
+														</div>
+														
+														<div class="rating">
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa light fa-star-o"></span>
+															<i>60%</i>
+														</div>
+														
+														<div class="rating">
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa light fa-star-o"></span>
+															<i>45%</i>
+														</div>
+														
+														<div class="rating">
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa light fa-star-o"></span>
+															<i>15%</i>
+														</div>
+														
+														<div class="rating">
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa fa-star"></span>
+															<span class="fa light fa-star-o"></span>
+															<i>1%</i>
+														</div>
+														
+													</div>
+													
+												</div>
+											</div>
+											
+										</div>
+										
+									<!-- Review Comments Box -->
+									<div class="review-comments-box">
+										<h6>Reseñas</h6>
+										{% for review in course.review_set.all %}
+										<!-- Reviewer Comment Box -->
+										<div class="reviewer-comment-box">
+											<h4>{{review.user.get_full_name}}</h4>
+											<div class="rating">
+												<span class="total-rating">{{review.score}}</span>
+												{% for score in range_score %}
+													{% if score < review.score %}
+													
+														<span class="fa fa-star"></span>
+													{% else %}
+														<span class="dark fa fa-star-o"></span>
+													{% endif %}
+													
+												{% endfor %}
+												&ensp; 3 days ago
+											</div>
+											<div class="text">{{review.opinion}}</div>
+											<div class="helpful">Was this review helpful?</div>
+											<ul class="like-option">
+												<li><span class="icon fa fa-thumbs-o-up"></span></li>
+												<li><span class="icon fa fa-thumbs-o-down"></span></li>
+												<li class="report">Report</li>
+											</ul>
+										</div>
+										{% endfor %}
+										
+									</div>
+	
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+	<!-- End Instructor Page Section -->
+{% endblock %}

@@ -59,12 +59,16 @@
 		$('.dark-mode .dark-buttons .on').on('click', function() {
 			$('.round').addClass('boll-right');
 			$('body').addClass('dark-body');
+			localStorage.setItem("dark-mode", "true");
+			console.log("ejecutao")
 		});
 		
 		// Dark Layout Button
 		$('.dark-mode .dark-buttons .off').on('click', function() {
 			$('.round').removeClass('boll-right');
 			$('body').removeClass('dark-body');
+			localStorage.setItem("dark-mode", "false");
+			console.log("ejecutao")
 		});
 		
 	}
@@ -73,6 +77,19 @@
 	
 	//Demo js
 	$( window ).on( "load", function() {
+		console.log(localStorage["dark-mode"] === "true")
+			// se guarda en local storage la configuración del usuario con respecto al dark mode
+			if (localStorage["dark-mode"] === "true"){
+				$('.round').addClass('boll-right');
+				$('body').addClass('dark-body');
+				console.log("elpepe")
+				localStorage.setItem("dark-mode", "true");
+				
+			}else{
+				$('.round').removeClass('boll-right');
+				$('body').removeClass('dark-body');
+				localStorage.setItem("dark-mode", "false");
+			}
 			document.onkeydown = function(e) {
 				if(e.keyCode == 123) {
 				return false;

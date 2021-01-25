@@ -2927,8 +2927,9 @@ img{
 }
 
 .team-block .inner-box .name a{
+	/*INSTRUCTORES COLOR LINK BLANCO*/
 	position:relative;
-	color:#0f0e2d;
+	color:#373789;
 }
 
 .team-block .inner-box .designation{
@@ -9536,7 +9537,7 @@ img{
 .dark-body .news-block .inner-box .author,
 .dark-body .news-block .inner-box h6 a,
 .dark-body .recent-posts .post .text a,
-.dark-body .team-block .inner-box .name,
+.dark-body .team-block .inner-box .name a,
 .dark-body .team-block .inner-box .courses,
 .dark-body .testimonial-block .inner-box .name,
 .dark-body .feature-block-three .inner-box h5,

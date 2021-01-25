@@ -27,4 +27,6 @@ urlpatterns = [
     path("curso/<int:pk>", views.CourseView.as_view(), name="course_detail"),
     path("sign_up/", views.SignUp.as_view(), name="register"),
     path("login/", views.Login.as_view(), name="login"),
+    path("logout/", views.Logout.as_view(), name="logout"),
+    path("api/category_courses/<str:category>/<int:page>", views.CategoryAsync.as_view(), name="category_courses"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,0 +1,110 @@
+{% extends 'core/base.html' %}
+{% load static %}
+<!-- Sidebar Side -->
+
+{% block sidenav %}
+                <div class="sidebar-side left-sidebar col-lg-3 col-md-12 col-sm-12">
+                	<aside class="sidebar sticky-top">
+						
+						<!-- Tags Widget -->
+                        <div class="sidebar-widget tags-widget">
+							<div class="widget-content">
+								<div class="sidebar-title">
+									<h6>Temas Populares</h6>
+								</div>
+								<div class="content">
+									<ul>
+									{% for category in popular_tags %}
+									
+										<li><a href="#">{{category}}</a></li>
+									{% endfor %}
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Categories Widget -->
+                        <div class="sidebar-widget categories-widget">
+							<div class="widget-content">
+								<div class="sidebar-title">
+									<h6>Top Categorías</h6>
+								</div>
+								<div class="content">
+									<ul>
+										{% for category in top_categories %}
+											<li><a href="#"><span class="icon flaticon-web-programming"></span>{{category.name}}</a></li>
+
+										
+										{% endfor %}
+										
+										<!-- <li><a href="category.html"><span class="icon flaticon-web-programming"></span>Desarrollo</a></li>
+										<li><a href="category.html"><span class="icon flaticon-pie-chart"></span>Negocios</a></li>
+										<li><a href="category.html"><span class="icon flaticon-megaphone"></span>Marketing</a></li>
+										<li><a href="category.html"><span class="icon flaticon-computer"></span>IT y Software</a></li>
+										<li><a href="category.html"><span class="icon flaticon-picture"></span>Fotografia</a></li>
+										<li><a href="category.html"><span class="icon flaticon-ux"></span>UX Design</a></li> -->
+									</ul>
+									<a href="#" class="all-category">Ver todas las categorias</a>
+									<!-- <a href="category.html" class="all-category">Ver todas las categorias</a> -->
+								</div>
+							</div>
+						</div>
+						
+						<!-- Featured Widget -->
+                        <div class="sidebar-widget featured-widget">
+							<div class="widget-content">
+								<div class="sidebar-title">
+									<h6>Instructores Destacados</h6>
+								</div>
+								<div class="content">
+									<div class="featured-carousel owl-carousel owl-theme">
+										{% for optimus_instructor in optimus_instructors %}
+											{% if optimus_instructor.popular_index >= 3 %}
+											
+											
+												<div class="featured-block">
+													<div class="inner-box">
+														<div class="image">
+															<a href="instructor-profile.html" class="overlay-link"></a>
+															<img src="{% static 'core/images/assets/programador-background.jpg' %}" alt="" />
+															<!-- Overlay Box -->
+															<div class="overlay-box">
+																<div class="overlay-inner">
+																	<div class="overlay-content">
+																		<!-- Author Image -->
+																		<div class="author-image">
+																			<img src="{% get_media_prefix %}{{instructor.profile_pic}}" alt="" />
+																		</div>
+																		<div class="name">{{optimus_instructor.user.first_name}}  {{optimus_instructor.user.last_name}}</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											{% endif %}
+										
+										{% endfor %}
+										
+										
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<!--  Support Widget -->
+                        <div class="sidebar-widget support-widget">
+							<div class="widget-content">
+								<h5>Estamos aquí para ayudarte</h5>
+								<div class="text">Nuestro equipo de soporte vela por ti 24/7.<br>Recibe ayuda inmediata sobre cualquiera de tus consultas</div>
+								<a href="#" class="theme-btn btn-style-one"><span class="txt">Centro de Soporte</span></a>
+								<!-- <a href="help.html" class="theme-btn btn-style-one"><span class="txt">Centro de Soporte</span></a> -->
+							</div>
+						</div>
+						
+					</aside>
+				</div>
+{% endblock %}
+{% block content%}
+{% endblock %}
