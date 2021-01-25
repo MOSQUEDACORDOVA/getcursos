@@ -25,7 +25,7 @@
 						<div class="inner-column">
 							<h2>{{course.title}}</h2>
 							<div class="sub-text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</div>
-							<div class="rating"><span class="rate">{{course.score}} <i class="fa fa-star"></i></span><span class="total-rating">45,668 Ratings</span></div>
+							<div class="rating"><span class="rate">{{course.score}} <i class="fa fa-star"></i></span><span class="total-rating">{{course.review_set.count}} Ratings</span></div>
 							<div class="price">Course Price: <span>${{course.price}}</span></div>
 							<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
 							<div class="buttons-box">
@@ -96,7 +96,7 @@
 							<!-- Tab  -->
 							<div class="tab" id="prod-course">
 								<div class="content">
-									<h6>Course Content</h6>
+									<h6>Contenido del Curso</h6>
 									<div class="text">
 										{{course.description}}									
 										</div>
@@ -263,11 +263,11 @@
 												&ensp; 3 days ago
 											</div>
 											<div class="text">{{review.opinion}}</div>
-											<div class="helpful">Was this review helpful?</div>
+											<div class="helpful">Te fue de Ayuda la Reseña?</div>
 											<ul class="like-option">
 												<li><span class="icon fa fa-thumbs-o-up"></span></li>
 												<li><span class="icon fa fa-thumbs-o-down"></span></li>
-												<li class="report">Report</li>
+												<li class="report"><a href="#">Reportar Abuso</a></li>
 											</ul>
 										</div>
 										{% endfor %}
