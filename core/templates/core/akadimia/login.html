@@ -18,6 +18,10 @@
 						<small class="text-danger">Usuario o Contraseña Incorrecta</small>
 					
 					{% endif %}
+					{% if 'not_registered' in request.GET %}
+						<small class="text-danger">Usuario No registrado <a href="{% url 'register' %}">Registrarte</a></small>
+					
+					{% endif %}
 					<form method="post" action="{% url 'login' %}">
 						{% csrf_token %}
 						<!-- Form Group -->

@@ -4,11 +4,8 @@ from datetime import datetime, timedelta
 from django.db.models.signals import post_save
 from django.core.validators import MaxValueValidator,MinValueValidator, FileExtensionValidator
 # Create your models here.
-# validator function
 
-#def min_value(number):
-#    if 
-#
+
 
 class Category(models.Model):
     # Categoría a la que pertenece el curso
