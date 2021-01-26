@@ -107,3 +107,4 @@ __MACOSX/
 *.sqlite3
 *__pycache__/
 *migrations/
+*.mp4
