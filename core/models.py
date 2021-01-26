@@ -74,6 +74,48 @@ class Course(models.Model):
     requirements = models.TextField(max_length=1000, null=True)
     uploaded_date = models.DateTimeField(null=True, default=datetime.now())
     students = models.ManyToManyField(UserExtended, related_name="students", blank=True)
+    preview_video = models.FileField(upload_to="video/previews/", null=True, blank=True)
+    
+    def score_5(self):
+
+        review_count = len(list(filter(lambda x: x.score == 5,self.review_set.all())))
+        print(self.review_set.all())
+        if review_count > 0:
+            return review_count * 100 / len(self.review_set.all())
+        else: 
+            return 0
+    
+    def score_4(self):
+        review_count = len(list(filter(lambda x: x.score == 4,self.review_set.all())))
+        print(self.review_set.all())
+        if review_count > 0:
+            return review_count * 100 / len(self.review_set.all())
+        else: 
+            return 0
+
+    def score_3(self):
+        review_count = len(list(filter(lambda x: x.score == 3,self.review_set.all())))
+        print(self.review_set.all())
+        if review_count > 0:
+            return review_count * 100 / len(self.review_set.all())
+        else: 
+            return 0
+
+    def score_2(self):
+        review_count = len(list(filter(lambda x: x.score == 2,self.review_set.all())))
+        print(self.review_set.all())
+        if review_count > 0:
+            return review_count * 100 / len(self.review_set.all())
+        else: 
+            return 0
+
+    def score_1(self):
+        review_count = len(list(filter(lambda x: x.score == 1,self.review_set.all())))
+        print(self.review_set.all())
+        if review_count > 0:
+            return review_count * 100 / len(self.review_set.all())
+        else: 
+            return 0
 
     def save(self, *args, **kwargs):
         if self.score > 5:
@@ -106,6 +148,7 @@ class Review(models.Model):
     
     class Meta:
         unique_together = ["user", "course"]
+        
     def save(self, *args, **kwargs):
         if self.score > 5:
             self.score = 5

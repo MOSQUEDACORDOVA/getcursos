@@ -24,7 +24,7 @@
 									<div class="time">15 horas</div>
 								</div>
 								<div class="lower-content">
-									<h6><a href="course-lesson.html">{{one.title}}</a></h6>
+									<h6><a href="{% url 'course_detail' pk=one.pk %}">{{one.title}}</a></h6>
 									<ul class="post-meta">
 										{% for tag in one.tags.all  %}
 											<li>{{tag.name}}</li>
